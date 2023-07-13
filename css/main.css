@@ -44,3 +44,51 @@ a.request:hover p {
 a.request p {
   color: #fff;
 }
+
+.present {
+  position: relative;
+  overflow: hidden;
+}
+.present .background {
+  position: absolute;
+  width: 114%;
+  z-index: -1;
+}
+
+.present .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  background-color: #b0a07d;
+  opacity: 0.1;
+}
+
+.present .container {
+  position: relative;
+  z-index: 1;
+}
+
+.menu-btn button {
+  background: none;
+  position: fixed;
+  right: -10px;
+  top: 150px;
+  border: none;
+}
+
+.menu {
+  position: fixed;
+  width: 25%;
+  height: 100vh;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 5;
+  display: none;
+}
+
+.menu.active {
+  display: block;
+}

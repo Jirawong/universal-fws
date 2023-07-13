@@ -39,7 +39,7 @@
 }
 .present .background {
   position: absolute;
-  width: 110%;
+  width: 114%;
   z-index: -1;
 }
 
@@ -57,4 +57,13 @@
 .present .container {
   position: relative;
   z-index: 1;
+}
+
+@media (max-width: 540px) {
+  .banner-bg img {
+    position: absolute;
+    z-index: -1;
+    top: 75px;
+    width: 100%;
+  }
 }
