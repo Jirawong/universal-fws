@@ -3,7 +3,7 @@
 }
 @font-face {
   font-family: "ITCGaramondStd-LtCondIta";
-  src: url("/assets/ITCGaramondStd-LtCondIta.otf") format("opentype");
+  src: url("../assets/ITCGaramondStd-LtCondIta.otf") format("opentype");
 }
 
 .font-ITC {
@@ -21,6 +21,12 @@
     opacity: 1;
     top: 0;
   }
+}
+
+.header h1,
+.header h2,
+.header h3 {
+  animation: fadeIn 1s ease-in;
 }
 
 a {
@@ -82,7 +88,7 @@ a.request p {
 
 .menu {
   position: fixed;
-  width: 25%;
+  width: 50vh;
   height: 100vh;
   right: 0;
   background: rgba(0, 0, 0, 0.8);
@@ -92,4 +98,9 @@ a.request p {
 
 .menu.active {
   display: block;
+}
+
+.menu a:hover h1 {
+  color: #b0a07b !important;
+  transition: color 0.3s ease-in-out;
 }

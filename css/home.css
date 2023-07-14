@@ -93,6 +93,14 @@
   }
 }
 
+.col a img {
+  filter: grayscale();
+}
+
+.col a:hover img {
+  filter: none;
+}
+
 .contact-us {
   position: relative;
   overflow: hidden;
@@ -210,6 +218,7 @@ textarea {
 
 .blog {
   position: relative;
+  overflow: hidden;
 }
 .blog .bg-img {
   position: absolute;

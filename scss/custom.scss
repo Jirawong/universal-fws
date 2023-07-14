@@ -1,10 +1,17 @@
 @import "../node_modules/bootstrap/scss/functions";
 $container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
+  sm: 1320px,
+  md: 1320px,
+  lg: 1320px,
   xl: 1320px,
 );
+
+@media (min-width: 992px) {
+  .col-lg-2-4 {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+}
 
 $primary-1: #b0a07d;
 $primary-2: #b0a07b;

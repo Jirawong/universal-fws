@@ -1,0 +1,13 @@
+.header {
+  position: relative;
+  background-image: url(../assets/png/blog.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.next-3,
+.prev-3 {
+  max-width: 100px;
+}
