@@ -31,6 +31,13 @@
   }
 }
 
+@media (max-width: 1400px) {
+  .brand .logo {
+    height: 145px;
+    width: 145px;
+  }
+}
+
 .brand .logo img {
   width: 100px;
   height: 100px;
@@ -43,4 +50,37 @@
 .brand .logo:hover {
   transform: scale(1.2);
   transition: transform 0.3s ease-in-out;
+}
+
+.topic .wine {
+  position: relative;
+}
+.wine:hover .hover-wine {
+  display: block;
+  opacity: 1;
+}
+.hover-wine {
+  position: absolute;
+  background-color: #b0a07b;
+  width: 264px;
+  left: -65px;
+  top: 50px;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.2s ease-in-out;
+}
+.hover-wine .triangle {
+  position: absolute;
+  left: 125px;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 25px solid #b0a07b;
+}
+
+.hover-wine a:hover h1 {
+  text-decoration: underline;
+  text-underline-offset: 5px;
 }

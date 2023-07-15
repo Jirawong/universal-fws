@@ -10,6 +10,10 @@
   font-family: "ITCGaramondStd-LtCondIta";
 }
 
+.font-prompt {
+  font-family: "Prompt", sans-serif;
+}
+
 @keyframes fadeIn {
   0% {
     position: relative;
@@ -85,10 +89,21 @@ a.request p {
   border: none;
   z-index: 5;
 }
+@media (min-width: 992px) {
+  .menu {
+    position: fixed;
+    width: 50vh !important;
+    height: 100vh;
+    right: 0;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 5;
+    display: none;
+  }
+}
 
 .menu {
   position: fixed;
-  width: 50vh;
+  width: 100vh;
   height: 100vh;
   right: 0;
   background: rgba(0, 0, 0, 0.8);
