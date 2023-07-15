@@ -87,12 +87,6 @@
   left: 85.5%;
 }
 
-@media (max-width: 768px) {
-  .category {
-    display: none;
-  }
-}
-
 .col a img {
   filter: grayscale();
 }
@@ -133,16 +127,36 @@ textarea {
 }
 
 /*carousel*/
-.carousel-2 {
+.carousel-1-1 {
   position: relative;
 }
-.carousel-2 .next-1 {
+.carousel-1-1 .next-1 {
   position: absolute;
   right: 0;
   z-index: 2;
 }
 
-.carousel-2 .prev-1 {
+.carousel-1-1 .prev-1 {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+.carousel-2,
+.carousel-1-1,
+.carousel-blog {
+  position: relative;
+}
+.carousel-2 .next-2,
+.next-1,
+.next-blog {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+
+.carousel-2 .prev-2,
+.prev-1,
+.prev-blog {
   position: absolute;
   left: 0;
   z-index: 2;
@@ -188,18 +202,16 @@ textarea {
 
 @media (max-width: 1699px) {
   .customers .logo {
-    height: 175px;
-    width: 175px;
+    height: 25vh;
+    width: 25vh;
   }
 }
-.customers a img {
+
+.customers .col-lg a img {
   width: 100px;
   height: 100px;
 }
 
-.customers .logo {
-  box-shadow: 2px 2px 15px 3px rgb(156, 156, 156);
-}
 .customers .logo a {
   filter: grayscale();
 }
@@ -217,13 +229,44 @@ textarea {
 }
 
 .blog {
-  position: relative;
-  overflow: hidden;
+  background-image: url(../assets/home/Group\ 648.png);
+  background-size: cover;
 }
-.blog .bg-img {
-  position: absolute;
-  left: -500px;
-  top: -200px;
-  scale: 0.8;
-  z-index: -1;
+
+@media (min-width: 992px) {
+  .customers .logo {
+    box-shadow: 2px 2px 15px 3px rgb(156, 156, 156);
+  }
+  .contact-us .location-map .col-lg-4 {
+    width: 40%;
+  }
+  .contact-us .location-map .col-lg-6 {
+    width: 60%;
+  }
+}
+@media (min-width: 560px) {
+  .vid-container iframe {
+    width: 560px;
+  }
+
+  .present {
+    background-image: url(../assets/about/Group\ 53.png);
+    background-size: 150% !important;
+  }
+}
+@media (max-width: 992px) {
+  .contact-us iframe {
+    height: 50vh !important;
+  }
+
+  .present {
+    background-image: url(../assets/about/Group\ 53.png);
+    background-size: 150% !important;
+  }
+}
+
+.present {
+  background-image: url(../assets/about/Group\ 53.png);
+  background-size: 300%;
+  background-position: -175px 0;
 }

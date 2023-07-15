@@ -5,6 +5,14 @@
   width: 100%;
 }
 
+@media (max-width: 992px) {
+  .header {
+    background-image: url(../assets/about/Group\ 651.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
 .header {
   z-index: 1;
 }
@@ -12,10 +20,6 @@
 .header h1,
 .header h2 {
   animation: fadeIn 1s ease-in;
-}
-
-.our-story .text-container {
-  padding: 0 84px;
 }
 
 .our-story h2 {
