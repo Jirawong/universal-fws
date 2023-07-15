@@ -12,6 +12,20 @@
   max-width: 100px;
 }
 
+.carousel-blog {
+  position: relative;
+}
+.next-blog-sm {
+  position: absolute;
+  right: 0;
+  z-index: 2;
+}
+.prev-blog-sm {
+  position: absolute;
+  left: 0;
+  z-index: 2;
+}
+
 .content-list .overlay {
   position: absolute;
   top: 0;
