@@ -234,9 +234,6 @@ textarea {
 }
 
 @media (min-width: 992px) {
-  .customers .logo {
-    box-shadow: 2px 2px 15px 3px rgb(156, 156, 156);
-  }
   .contact-us .location-map .col-lg-4 {
     width: 40%;
   }
