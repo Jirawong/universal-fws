@@ -119,3 +119,13 @@ a.request p {
   color: #b0a07b !important;
   transition: color 0.3s ease-in-out;
 }
+
+.primary-btn:hover {
+  border: 1px solid #b0a07b !important;
+  background: #fff !important;
+  color: #b0a07b !important;
+  transition: background-color 0.3s ease-in-out;
+}
+.primary-btn:hover h5 {
+  color: #b0a07b !important;
+}

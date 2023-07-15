@@ -207,7 +207,7 @@ textarea {
   }
 }
 
-.customers .col-lg a img {
+.customers .col a img {
   width: 100px;
   height: 100px;
 }
@@ -226,6 +226,19 @@ textarea {
 /*blog*/
 .blog .col-6 {
   width: 50%;
+}
+.blog-container .white-btn:hover {
+  background-color: #b0a07b;
+  transition: background-color 0.3s ease-in-out;
+}
+.blog-container .white-btn:hover h4 {
+  color: #fff !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.blog-container .text-container:hover h3 {
+  color: #b0a07b !important;
+  transition: color 0.3s ease-in-out;
 }
 
 .blog {
