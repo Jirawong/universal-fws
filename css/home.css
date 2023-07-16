@@ -200,14 +200,14 @@ textarea {
   }
 }
 
-@media (max-width: 1699px) {
+@media (min-width: 1400px) and( max-width: 1699px) {
   .customers .logo {
     height: 25vh;
     width: 25vh;
   }
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 429px) and(max-width: 1400px) {
   .customers .logo {
     height: 20vh;
     width: 20vh;
