@@ -197,6 +197,7 @@ textarea {
   .customers .logo {
     height: 200px !important;
     width: 200px !important;
+    margin-left: 0 !important;
   }
 }
 
@@ -204,21 +205,18 @@ textarea {
   .customers .logo {
     height: 25vh !important;
     width: 25vh !important;
+    margin-left: 0 !important;
   }
 }
 
-@media (min-width: 429px) and(max-width: 1400px) {
+@media (min-width: 429px) and (max-width: 1400px) {
   .customers .logo {
+    margin-left: 0 !important;
     height: 20vh !important;
     width: 20vh !important;
   }
 }
 
-@media (min-width: 992px) {
-  .customers .logo {
-    margin-left: 0 !important;
-  }
-}
 @media (max-width: 429px) {
   .customers .logo {
     height: 125px !important;
