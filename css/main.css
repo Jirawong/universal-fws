@@ -92,12 +92,17 @@ a.request p {
 @media (min-width: 992px) {
   .menu {
     position: fixed;
-    width: 50vh !important;
+    width: 450px !important;
     height: 100vh;
+    padding-top: 50px;
     right: 0;
     background: rgba(0, 0, 0, 0.8);
     z-index: 5;
     display: none;
+  }
+  .menu .logo-container {
+    width: 250px;
+    margin-right: 65px;
   }
 }
 

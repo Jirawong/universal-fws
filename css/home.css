@@ -212,8 +212,8 @@ textarea {
 @media (min-width: 429px) and (max-width: 1400px) {
   .customers .logo {
     margin-left: 0 !important;
-    height: 20vh !important;
-    width: 20vh !important;
+    height: 15vh !important;
+    width: 15vh !important;
   }
 }
 
