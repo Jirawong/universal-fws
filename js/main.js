@@ -6,8 +6,6 @@ $(document).ready(function () {
   $(".close-menu").on("click", function () {
     $(".menu").removeClass("active");
   });
-  var video = $("#opening")[0];
-  video.volume = 0.05;
 
   $("#Carousel-1").owlCarousel({
     loop: true,
