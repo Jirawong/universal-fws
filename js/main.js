@@ -1,10 +1,16 @@
 $(document).ready(function () {
   $(".menu-open").on("click", function () {
     $(".menu").addClass("active");
+    $(".menu-sm").addClass("active");
+    $(".navbar").addClass("hidden");
+    $(".menu-open").addClass("hidden");
   });
 
   $(".close-menu").on("click", function () {
     $(".menu").removeClass("active");
+    $(".menu-sm").removeClass("active");
+    $(".navbar").removeClass("hidden");
+    $(".menu-open").removeClass("hidden");
   });
 
   $("#Carousel-1").owlCarousel({

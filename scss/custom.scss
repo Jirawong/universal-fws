@@ -16,13 +16,6 @@ $grid-breakpoints: (
   xxxl: 1700px,
 );
 
-@media (min-width: 992px) {
-  .col-lg-2-4 {
-    flex: 0 0 auto;
-    width: 20%;
-  }
-}
-
 $primary-1: #b0a07d;
 $primary-2: #b0a07b;
 $dark-1: #000000;
