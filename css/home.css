@@ -193,7 +193,7 @@ textarea {
 }
 
 /*customers*/
-@media (min-width: 1700px) {
+@media (min-width: 1601px) {
   .customers .logo {
     height: 200px !important;
     width: 200px !important;
@@ -201,7 +201,7 @@ textarea {
   }
 }
 
-@media (min-width: 1401px) and (max-width: 1699px) {
+@media (min-width: 1401px) and (max-width: 1600px) {
   .customers .logo {
     height: 25vh !important;
     width: 25vh !important;
