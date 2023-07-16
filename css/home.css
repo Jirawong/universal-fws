@@ -243,10 +243,6 @@ textarea {
   filter: none;
 }
 
-.customers .logo:hover {
-  transform: scale(1.2);
-}
-
 /*blog*/
 .blog .col-6 {
   width: 50%;
