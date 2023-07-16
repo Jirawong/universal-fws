@@ -207,6 +207,32 @@ textarea {
   }
 }
 
+@media (max-width: 1400px) {
+  .customers .logo {
+    height: 20vh;
+    width: 20vh;
+  }
+}
+
+@media (min-width: 992px) {
+  .customers .logo {
+    margin-left: 0 !important;
+  }
+}
+@media (max-width: 429px) {
+  .customers .logo {
+    height: 125px;
+    width: 125px;
+  }
+  .customers .col a img {
+    width: 75px;
+    height: 75px;
+  }
+  .customers .logo .ms-5 {
+    margin-left: 20px !important;
+  }
+}
+
 .customers .col a img {
   width: 100px;
   height: 100px;
@@ -279,4 +305,11 @@ textarea {
   background-image: url(../assets/about/Group\ 53.png);
   background-size: 300%;
   background-position: -175px 0;
+}
+
+.google-map-btn:hover {
+  background-color: white !important;
+  color: black !important;
+  border: black solid 1px !important;
+  transition: background-color 0.5s ease-in-out;
 }

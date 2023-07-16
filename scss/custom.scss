@@ -5,6 +5,15 @@ $container-max-widths: (
   lg: 1320px,
   xl: 1320px,
 );
+$grid-breakpoints: (
+  xs: 0,
+  xsm: 430px,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+);
 
 @media (min-width: 992px) {
   .col-lg-2-4 {
