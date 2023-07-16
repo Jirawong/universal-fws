@@ -201,7 +201,7 @@ textarea {
   }
 }
 
-@media (min-width: 1400px) and( max-width: 1699px) {
+@media (min-width: 1401px) and (max-width: 1699px) {
   .customers .logo {
     height: 25vh !important;
     width: 25vh !important;
