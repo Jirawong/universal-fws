@@ -1,6 +1,4 @@
 $(document).ready(function () {
-  var video = $("#home-video")[0];
-  video.play();
   $(".menu-open").on("click", function () {
     $(".menu").addClass("active");
     $(".menu-sm").addClass("active");
