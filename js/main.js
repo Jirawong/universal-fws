@@ -1,3 +1,7 @@
+document.addEventListener("DOMContentLoaded", function () {
+  var video = document.getElementById("home-video");
+  video.play();
+});
 $(document).ready(function () {
   var video = $("#home-video")[0];
   video.play();
