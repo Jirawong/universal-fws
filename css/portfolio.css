@@ -6,6 +6,9 @@
   background-position: center;
   overflow: hidden;
 }
+a {
+  text-decoration: none;
+}
 
 .topic a.active h4 {
   text-decoration: underline 2px #b0a07b;
@@ -14,7 +17,16 @@
 
 .topic a:hover h4 {
   color: #b0a07b !important;
-  transition: color 0.3s ease-in-out;
+  text-decoration: underline 2px #b0a07b;
+  text-underline-offset: 5px;
+
+  transition: all 0.3s ease-in-out;
+}
+.topic a:hover {
+  color: #b0a07b !important;
+  text-decoration: underline 2px #b0a07b !important;
+  text-underline-offset: 5px;
+  transition: all 0.3s ease-in-out;
 }
 
 @media (min-width: 1700px) {
@@ -25,7 +37,7 @@
   }
 }
 
-@media (min-width: 1400px) and (max-width: 1699px) {
+@media (min-width: 1500px) and (max-width: 1699px) {
   .brand .logo {
     height: 175px !important;
     width: 175px !important;
@@ -33,7 +45,14 @@
   }
 }
 
-@media (min-width: 992px) and (max-width: 1400px) {
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .brand .logo {
+    height: 155px !important;
+    width: 155px !important;
+    margin-left: 0 !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
   .brand .logo {
     height: 145px !important;
     width: 145px !important;
@@ -45,6 +64,12 @@
   .brand .logo {
     height: 145px;
     width: 145px;
+  }
+  .wine-category h4 {
+    font-size: 18px !important;
+  }
+  .hover-wine {
+    left: 30px !important;
   }
 }
 

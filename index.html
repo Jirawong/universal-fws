@@ -25,6 +25,10 @@
       href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--navbar-->
@@ -60,10 +64,27 @@
           </a>
           <a
             type="button"
-            class="ms-auto mt-3"
+            class="port-toggle ms-auto mt-3"
             data-bs-toggle="collapse"
             data-bs-target="#port"
-            ><h1 class="text-light fs-6">PORTFOLIO</h1>
+            id=""
+          >
+            <div class="d-flex align-items-center">
+              <h1 class="text-light fs-6 me-2">PORTFOLIO</h1>
+              <div class="icon mb-2">
+                <svg width="20.414" height="11.414" viewBox="0 0 20.414 11.414">
+                  <g
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                    data-name="Group 130"
+                  >
+                    <path d="m.707.707 10 10" data-name="Line 30" />
+                    <path d="m19.707.707-10 10" data-name="Line 31" />
+                  </g>
+                </svg>
+              </div>
+            </div>
           </a>
           <div class="collapse" id="port">
             <div class="d-flex flex-column">
@@ -79,7 +100,11 @@
               <a href="portfolio.html" class="ms-auto mt-2"
                 ><h1 class="fs-6 font-ITC text-light">Others</h1>
               </a>
-              <div class="line border border-1 border-light ms-9"></div>
+              <div class="d-flex">
+                <div
+                  class="ms-auto line border border-1 border-light px-7 my-3"
+                ></div>
+              </div>
             </div>
           </div>
           <a href="whats-new.html" class="ms-auto mt-3"
@@ -184,10 +209,26 @@
           </a>
           <a
             type="button"
-            class="ms-auto mt-3"
+            class="port-toggle ms-auto mt-3"
             data-bs-toggle="collapse"
             data-bs-target="#port"
-            ><h1 class="text-light fs-6">PORTFOLIO</h1>
+          >
+            <div class="d-flex align-items-center">
+              <h1 class="text-light fs-6 me-2">PORTFOLIO</h1>
+              <div class="icon mb-2 pb-1">
+                <svg width="20.414" height="11.414" viewBox="0 0 20.414 11.414">
+                  <g
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                    data-name="Group 130"
+                  >
+                    <path d="m.707.707 10 10" data-name="Line 30" />
+                    <path d="m19.707.707-10 10" data-name="Line 31" />
+                  </g>
+                </svg>
+              </div>
+            </div>
           </a>
           <div class="collapse" id="port">
             <div class="d-flex flex-column">
@@ -203,7 +244,11 @@
               <a href="portfolio.html" class="ms-auto mt-2"
                 ><h1 class="fs-6 font-ITC text-light">Others</h1>
               </a>
-              <div class="line border border-1 border-light ms-9"></div>
+              <div class="d-flex">
+                <div
+                  class="ms-auto line border border-1 border-light my-3 px-6"
+                ></div>
+              </div>
             </div>
           </div>
           <a href="whats-new.html" class="ms-auto mt-3"
@@ -309,10 +354,9 @@
           /></a>
           <div class="d-flex align-items-center">
             <a href="#" class="request me-lg-5">
-              <p class="fs-6 font-ITC fst-italic mb-0 fw-light">
-                Request Price
-              </p>
+              <p class="fs-6 font-ITC fst-italic mb-0">Request Price</p>
             </a>
+
             <div class="contacts d-lg-block d-none">
               <a href="#" class="px-3">
                 <svg
@@ -394,20 +438,30 @@
           </div>
         </div>
       </div>
+      <a href="#top" class="to-top">
+        <img src="assets/svg/up.svg" alt="" />
+      </a>
     </div>
 
     <!--head-->
 
-    <div class="video-container mt-6 mt-lg-0">
-      <video autoplay muted playsinline style="width: 100%" id="home-video">
+    <div class="video-container mt-6 mt-lg-0" id="top">
+      <video
+        autoplay
+        loop
+        muted
+        playsinline
+        style="width: 100%"
+        id="home-video"
+      >
         <source src="SHORT-UNIVERSAL.mp4" type="video/mp4" />
       </video>
     </div>
 
     <div class="our-story mt-lg-5 container-fluid">
       <div class="row">
-        <div class="col-lg-8 col-12 pe-0 d-lg-block d-none">
-          <div class="img d-flex h-100">
+        <div class="col-lg-8 col-12 pe-0 d-lg-block d-none ps-0">
+          <div class="img our-story-img d-flex h-100">
             <img
               class="img-fluid mt-auto"
               src="assets/home/Group 132.png"
@@ -416,7 +470,7 @@
           </div>
         </div>
         <div class="col-lg-4 col-12 pe-0">
-          <div class="box pt-lg-5 px-3">
+          <div class="box px-lg-0 px-3">
             <div class="text-container text-center pt-lg-5">
               <h1 class="pt-5 fs-3">our STORY</h1>
             </div>
@@ -424,13 +478,11 @@
               <img class="img-fluid" src="assets/Group 16.svg" alt="" />
             </div>
             <div class="text-container pt-5">
-              <h2 class="text-dark-5 font-ITC fst-italic fs-6 pb-5">
-                Evolving from The California Wine Company<span
-                  class="d-lg-block d-none"
-                >
-                  with 26 years of experience,</span
-                >
+              <h2 class="text-dark font-ITC fw-light fs-6 pb-5">
+                Evolving from The California Wine Company with 26 years of
+                experience,
               </h2>
+
               <h3 class="text-dark-1 fs-9 lh-lg-lg lh-lg">
                 Out comes the Universal Fine Wine and Spirit Co. Our humble
                 story began 26 years ago when our founder, Charles Huang, de
@@ -454,7 +506,7 @@
           </div>
         </div>
         <div class="col-lg-8 col-12 mt-4 pe-0 d-lg-none d-block ps-0">
-          <div class="img d-flex h-100">
+          <div class="img our-story-img d-flex h-100">
             <img
               class="img-fluid mt-auto"
               src="assets/home/Group 132.png"
@@ -483,9 +535,135 @@
         <div
           class="d-lg-flex d-block justify-content-between align-items-center w-25 mb-5 mt-4"
         >
-          <a href="#"
-            ><h1 class="text-dark mb-4 mb-lg-0 fs-6 font-ITC">Wine</h1></a
-          >
+          <div class="wine">
+            <a href="" class="active"
+              ><h1 class="text-dark mb-4 mb-lg-0 fs-6 font-ITC">Wine</h1></a
+            >
+            <div class="hover-wine px-4 py-4">
+              <div class="triangle"></div>
+              <a href="portfolio.html" class="all">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/dots.svg" alt="" />
+                  </div>
+                  <h1
+                    class="ps-4 text-white mb-0 fs-9 text-uppercase font-prompt"
+                  >
+                    all
+                  </h1>
+                </div>
+              </a>
+              <a href="portfolio.html" class="usa">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-usa.png" alt="" />
+                  </div>
+                  <h1
+                    class="ps-4 text-white mb-0 fs-9 text-uppercase font-prompt"
+                  >
+                    U.S.A (CALIFORNIA)
+                  </h1>
+                </div>
+              </a>
+              <a href="portfolio.html" class="france">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-france.png" alt="" />
+                  </div>
+                  <h1
+                    class="ps-4 text-white mb-0 fs-9 text-uppercase font-prompt"
+                  >
+                    FRANCE
+                  </h1>
+                </div>
+              </a>
+              <a href="portfolio.html" class="argen">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-argentina.png" alt="" />
+                  </div>
+                  <h1
+                    class="ps-4 text-white mb-0 fs-9 text-uppercase font-prompt"
+                  >
+                    ARGENTINA
+                  </h1>
+                </div>
+              </a>
+              <a href="portfolio.html" class="australia">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-aut.png" alt="" />
+                  </div>
+                  <h1
+                    class="ps-4 text-white mb-0 fs-9 text-uppercase font-prompt"
+                  >
+                    AUSTRALIA
+                  </h1>
+                </div>
+              </a>
+              <a href="portfolio.html" class="chile">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-chile.png" alt="" />
+                  </div>
+                  <h1
+                    class="ps-4 text-white mb-0 fs-9 text-uppercase font-prompt"
+                  >
+                    CHILE
+                  </h1>
+                </div>
+              </a>
+              <a href="portfolio.html" class="germany">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-germany.png" alt="" />
+                  </div>
+                  <h1
+                    class="ps-4 text-white mb-0 fs-9 text-uppercase font-prompt"
+                  >
+                    GERMANY
+                  </h1>
+                </div>
+              </a>
+              <a href="portfolio.html" class="italy">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-italy.png" alt="" />
+                  </div>
+                  <h1
+                    class="ps-4 text-white mb-0 fs-9 text-uppercase font-prompt"
+                  >
+                    ITALY
+                  </h1>
+                </div>
+              </a>
+              <a href="portfolio.html" class="newz">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-newz.png" alt="" />
+                  </div>
+                  <h1
+                    class="ps-4 text-white mb-0 fs-9 text-uppercase font-prompt"
+                  >
+                    NEW ZEALAND
+                  </h1>
+                </div>
+              </a>
+              <a href="portfolio.html" class="spain">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-spain.png" alt="" />
+                  </div>
+                  <h1
+                    class="ps-4 text-white mb-0 fs-9 text-uppercase font-prompt"
+                  >
+                    SPAIN
+                  </h1>
+                </div>
+              </a>
+            </div>
+          </div>
+
           <div
             class="line border-start border-primary-2 d-lg-block d-none"
             style="padding-top: 40px"
@@ -570,7 +748,7 @@
             PROUDLY PRESENT
           </h1>
           <img src="assets/Group 16.svg" alt="" />
-          <h2 class="text-dark font-ITC fst-italic fs-6 mt-5">
+          <h2 class="text-dark font-ITC fw-light fs-6 mt-5">
             With our first harvest in 1978 we made a pioneering decision to
             focus
             <br class="d-lg-block d-none" />on the production of Merlot
@@ -584,10 +762,8 @@
           </h3>
         </div>
 
-        <div class="vid-container text-center mt-4 mb-6">
+        <div class="vid-container text-center mt-4 w-100 h-100">
           <iframe
-            width="430"
-            height="315"
             src="https://www.youtube.com/embed/wh8pMInp_3Q?controls=0"
             title="YouTube video player"
             frameborder="0"
@@ -597,7 +773,7 @@
         </div>
       </div>
 
-      <div class="what-new pt-5">
+      <div class="what-new mt-5">
         <div class="text-container text-center pt-5">
           <h1 class="pt-5 fs-3">WHAT’S NEW</h1>
         </div>
@@ -804,11 +980,6 @@
           </div>
         </div>
         <div class="carousel-1-1 d-flex align-items-center">
-          <a type="button" class="prev-1">
-            <div class="w-50 mb-6 me-auto d-lg-none d-block">
-              <img src="assets/svg/left.svg" class="img-fluid" alt="" />
-            </div>
-          </a>
           <div
             id="Carousel-1-1"
             class="owl-carousel owl-theme slide my-5 d-lg-none d-block"
@@ -816,7 +987,7 @@
           >
             <div class="owl-carousel-item active">
               <a href="#">
-                <div class="img px-6">
+                <div class="img px-5">
                   <img
                     class="img-fluid"
                     src="assets/png/whats-new-1.png"
@@ -827,7 +998,7 @@
             </div>
             <div class="owl-carousel-item">
               <a href="#">
-                <div class="img px-6">
+                <div class="img px-5">
                   <img
                     class="img-fluid"
                     src="assets/png/whats-new-2.png"
@@ -838,7 +1009,7 @@
             </div>
             <div class="owl-carousel-item">
               <a href="#">
-                <div class="img px-6">
+                <div class="img px-5">
                   <img
                     class="img-fluid"
                     src="assets/png/whats-new-3.png"
@@ -849,7 +1020,7 @@
             </div>
             <div class="owl-carousel-item">
               <a href="#">
-                <div class="img px-6">
+                <div class="img px-5">
                   <img
                     class="img-fluid"
                     src="assets/png/whats-new-1.png"
@@ -859,11 +1030,6 @@
               </a>
             </div>
           </div>
-          <a type="button" class="next-1">
-            <div class="w-50 mb-6 ms-auto d-lg-none d-block">
-              <img src="assets/svg/right.svg" class="img-fluid" alt="" />
-            </div>
-          </a>
         </div>
       </div>
 
@@ -884,96 +1050,152 @@
             <div class="w-100 d-lg-block d-none">
               <img src="assets/svg/left.svg" class="img-fluid" alt="" /></div
           ></a>
-          <div id="Carousel-2" class="owl-carousel ps-3 pe-xxl-6 ps-xxl-8">
+          <div id="Carousel-2" class="owl-carousel ps-3 pe-xxl-8 ps-xxl-9">
             <div class="owl-carousel-item active">
-              <div class="d-flex flex-lg-column align-items-center">
+              <div class="d-lg-block d-none">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/themall.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/centara_grand.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/Minor.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/est.33.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/ibis.png" alt="" />
+                    </a>
+                  </div>
+                </div>
                 <div
-                  class="row row-cols-lg-5 row-cols-md-4 row-cols-2 me-lg-0 me-1 px-lg-5 px-xxl-0"
+                  class="d-flex justify-content-center align-items-center mt-3"
                 >
-                  <div class="col">
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/gourmet.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/ribs.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/cape_kudu.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/prime19.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/tops.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-lg-none d-block">
+                <div class="row me-1">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/themall.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6">
                     <div
-                      class="logo bg-white mb-3 d-flex align-items-center justify-content-center"
+                      class="logo p-4 bg-white mb-3 d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/centara_grand.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/Minor.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6">
                     <div
-                      class="logo mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/est.33.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/ibis.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6">
                     <div
-                      class="logo mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/gourmet.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/ribs.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6">
                     <div
-                      class="logo mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/cape_kudu.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/prime19.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6">
                     <div
-                      class="logo bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/tops.png" alt="" />
@@ -984,94 +1206,150 @@
               </div>
             </div>
             <div class="owl-carousel-item">
-              <div class="d-flex flex-lg-column align-items-center">
+              <div class="d-lg-block d-none">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/themall.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/centara_grand.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/Minor.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/est.33.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/ibis.png" alt="" />
+                    </a>
+                  </div>
+                </div>
                 <div
-                  class="row row-cols-lg-5 row-cols-md-4 row-cols-2 me-lg-0 me-1 px-lg-5 px-xxl-0"
+                  class="d-flex justify-content-center align-items-center mt-3"
                 >
-                  <div class="col">
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/gourmet.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/ribs.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/cape_kudu.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/prime19.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/tops.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-lg-none d-block">
+                <div class="row me-1">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/themall.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6">
                     <div
-                      class="logo bg-white mb-3 d-flex align-items-center justify-content-center"
+                      class="logo p-4 bg-white mb-3 d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/centara_grand.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/Minor.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6">
                     <div
-                      class="logo mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/est.33.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/ibis.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6">
                     <div
-                      class="logo mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/gourmet.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/ribs.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6">
                     <div
-                      class="logo mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/cape_kudu.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/prime19.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-6">
                     <div
-                      class="logo bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/tops.png" alt="" />
@@ -1125,7 +1403,7 @@
                   class="text-container d-flex flex-column align-items-center text-start px-5 pt-5 mt-5"
                 >
                   <h3 class="fs-9 w-100">23 May 2023</h3>
-                  <h3 class="fs-6 font-ITC fst-italic pt-3">
+                  <h3 class="fs-6 font-ITC fw-light pt-3">
                     Your Ultimate Guide to How Much Alcohol Is in Every Type of
                     Wine It May Be Higher Than You Think Wine It May Be Higher
                     Than You Think
@@ -1135,8 +1413,10 @@
                     blending grape in the late seventies, few were exploring the
                     potential of this varietal as a stand-alone wine.
                   </h3>
-                  <a href="#" class="white-btn mt-6">
-                    <div class="border border-2 border-primary-1 px-6 py-1">
+                  <a href="#" class="mt-6">
+                    <div
+                      class="bg-light white-btn border border-2 border-primary-1 px-6 py-1"
+                    >
                       <h4 class="text-primary-1 text-center pt-2 fs-9">
                         READ MORE
                       </h4>
@@ -1150,7 +1430,7 @@
                   class="text-container d-flex flex-column align-items-center text-start px-5 pt-5 mt-5"
                 >
                   <h3 class="fs-9 w-100">23 May 2023</h3>
-                  <h3 class="pt-3 fs-6 font-ITC fst-italic">
+                  <h3 class="pt-3 fs-6 font-ITC fw-light">
                     Your Ultimate Guide to How Much Alcohol Is in Every Type of
                     Wine It May Be Higher Than You Think Wine It May Be Higher
                     Than You Think
@@ -1162,7 +1442,7 @@
                   </h3>
                   <a href="#">
                     <div
-                      class="border border-2 white-btn border-primary-1 px-6 py-1 mt-5"
+                      class="bg-light border border-2 white-btn border-primary-1 px-6 py-1 mt-5"
                     >
                       <h4 class="text-primary-1 text-center pt-2 fs-9">
                         READ MORE
@@ -1278,7 +1558,7 @@
           </div>
           <div class="d-flex justify-content-center py-5">
             <a href="#">
-              <div class="read-more primary-btn bg-primary-1 px-5 py-2">
+              <div class="read-more primary-btn bg-primary-1 px-6 py-3">
                 <h5 class="text-light text-center mb-0 fs-9">VIEW ALL</h5>
               </div>
             </a>
@@ -1333,14 +1613,14 @@
                 class="email-input d-flex align-items-center bg-white me-lg-5 my-3 px-3 py-2"
               >
                 <h1 class="mb-0 text-dark fs-9 text-uppercase me-3">
-                  Email <span style="color: #ff0000">*</span>
+                  E-mail <span style="color: #ff0000">*</span>
                 </h1>
                 <input type="email" id="email" name="email" required />
               </div>
 
               <div class="email-input d-flex bg-white me-lg-5 my-3 px-3 py-2">
-                <h1 class="mb-0 text-dark fs-9 text-uppercase me-3">
-                  Message <span style="color: #ff0000">*</span>
+                <h1 class="mb-0 text-dark fs-9 text-uppercase d-flex">
+                  Message <span class="ps-1" style="color: #ff0000">*</span>
                 </h1>
                 <textarea
                   id="message"
@@ -1350,7 +1630,9 @@
                   required
                 ></textarea>
               </div>
-              <div class="d-flex justify-content-center mt-5 mb-5 mb-lg-0">
+              <div
+                class="d-flex justify-content-center mt-5 mb-5 me-lg-5 mb-lg-0"
+              >
                 <input
                   type="submit"
                   value="SEND"
@@ -1415,8 +1697,8 @@
             <div class="text-center">
               <h1 class="mb-4 font-ITC fst-itc fs-6">Wine Outlet Huahin</h1>
               <h2 class="mb-4 fs-9 px-3">
-                27/109 Petchkasem Road, Huahin, Prachuap Khiri Khan, 77110
-                Thailand
+                27/109 Petchkasem Road, Huahin, <br />
+                Prachuap Khiri Khan, 77110 Thailand
               </h2>
             </div>
             <div class="contact ms-8">
@@ -1449,7 +1731,8 @@
             <div class="text-center">
               <h1 class="mb-4 font-ITC fst-itc fs-6">Wine Outlet Phuket</h1>
               <h2 class="mb-4 fs-9 px-5">
-                365 Srisoonthorn Road, Cherntalay, Phuket, 83110 Thailand
+                365 Srisoonthorn Road, Cherntalay, <br />
+                Phuket, 83110 Thailand
               </h2>
             </div>
             <div class="contact ms-8">
@@ -1509,48 +1792,46 @@
               /></a>
             </div>
           </div>
-          <div class="mt-4">
+          <div class="links mt-4">
             <div class="row text-lg-start text-center">
-              <div class="col-lg-4 col-12 pe-0">
+              <div class="col-lg-4 col-12 pe-lg-0">
                 <a href="#"
                   ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
                     About
                   </h1>
                 </a>
               </div>
-              <div class="col-lg-4 col-12 mt-lg-0 mt-4 pe-0">
+              <div class="col-lg-4 col-12 mt-lg-0 mt-4 pe-lg-0">
                 <a href="#"
                   ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
                     portfolio
                   </h1>
                 </a>
               </div>
-              <div class="col-lg-4 col-12 mt-lg-0 mt-4 pe-0">
+              <div class="col-lg-4 col-12 mt-lg-0 mt-4 pe-lg-0">
                 <a href="#"
                   ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
                     what's new
                   </h1>
                 </a>
               </div>
-              <div class="col-lg-4 col-12 mt-4 pe-0">
+              <div class="col-lg-4 col-12 mt-4 pe-lg-0">
                 <a href="#"
                   ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
                     customers
                   </h1>
                 </a>
               </div>
-              <div class="col-lg-4 col-12 mt-4 pe-0">
+              <div class="col-lg-4 col-12 mt-4 pe-lg-0">
                 <a href="#"
                   ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
                     blog
                   </h1>
                 </a>
               </div>
-              <div class="col-lg-4 col-12 mt-4">
+              <div class="col-lg-4 col-12 mt-4 pe-lg-0">
                 <a href="#"
-                  ><h1
-                    class="fs-9 ms-lg-0 ms-3 text-white text-uppercase fw-light mb-0"
-                  >
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
                     contact
                   </h1>
                 </a>
@@ -1563,7 +1844,10 @@
       <div class="bg-dark-4 text-center">
         <h1 class="mb-0 text-white py-4" style="font-size: 12px">
           Copyright © 2023 | UNIVERSAL FINE WINE & SPIRITS COMPANY LIMITED. All
-          Rights Reserved. | Designed By Belong-To
+          Rights Reserved. |
+          <a href="http://www.belongto.com/main/index.html">
+            <span class="text-white">Designed By Belong-To</span></a
+          >
         </h1>
       </div>
     </div>

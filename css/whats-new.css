@@ -21,18 +21,24 @@
   }
 }
 
-.content {
+.content-list {
   position: relative;
   background-image: url("../assets/about/Group\ 53.png");
-  background-size: 125%;
+  background-size: 120%;
+  background-repeat: no-repeat;
 }
-.content .overlay {
+.content-list .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: -1;
-  background-color: #b0a07d;
-  opacity: 0.1;
+  background-color: #000;
+  opacity: 0.05;
+}
+
+.content-list .row a:hover h3 {
+  color: #b0a07d !important;
+  transition: color 0.3s ease-in-out;
 }

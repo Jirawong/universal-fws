@@ -43,23 +43,12 @@
 
 .present {
   position: relative;
-  overflow: hidden;
 }
-.present .background {
-  position: absolute;
-  width: 114%;
-  z-index: -1;
-}
-
-.present .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background-color: #b0a07d;
-  opacity: 0.1;
+.present {
+  background-image: url(../assets/about/Group\ 53.png);
+  background-size: 120% !important;
+  background-position: -100px 0px;
+  background-repeat: no-repeat;
 }
 
 .present .container {
@@ -74,4 +63,9 @@
     top: 75px;
     width: 100%;
   }
+}
+
+.underline {
+  text-decoration: underline #b0a07d 1px;
+  text-underline-offset: px;
 }

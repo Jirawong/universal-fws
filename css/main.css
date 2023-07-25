@@ -4,10 +4,13 @@
 @font-face {
   font-family: "ITCGaramondStd-LtCondIta";
   src: url("../assets/ITCGaramondStd-LtCondIta.otf") format("opentype");
+  font-weight: 100;
+  font-weight: 300;
+  font-weight: 400;
 }
 
 .font-ITC {
-  font-family: "ITCGaramondStd-LtCondIta";
+  font-family: "ITCGaramondStd-LtCondIta", sans-serif;
 }
 
 .font-prompt {
@@ -24,6 +27,19 @@
     position: relative;
     opacity: 1;
     top: 0;
+  }
+}
+
+@keyframes fadeIn-from-left {
+  0% {
+    position: relative;
+    left: -100px;
+    opacity: 0;
+  }
+  100% {
+    position: relative;
+    opacity: 1;
+    left: 0;
   }
 }
 
@@ -65,15 +81,15 @@ a.request p {
   z-index: -1;
 }
 
-.present .overlay {
+.overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
   z-index: 0;
-  background-color: #b0a07d;
-  opacity: 0.1;
+  background-color: #000;
+  opacity: 0.05;
 }
 
 .present .container {
@@ -89,6 +105,26 @@ a.request p {
   border: none;
   z-index: 5;
 }
+
+.port-toggle:hover svg g {
+  stroke: #b0a07b !important;
+  transition: stroke 0.3s ease-in-out;
+}
+.port-toggle.active h1 {
+  color: #b0a07b !important;
+}
+.port-toggle.active svg g {
+  stroke: #b0a07b !important;
+  transition: stroke 0.3s ease-in-out;
+}
+.port-toggle svg {
+  transform: rotate(0deg);
+  transition: transform 0.4s ease-in-out;
+}
+.port-toggle.active svg {
+  transform: rotate(180deg);
+  transition: transform 0.4s ease-in-out;
+}
 @media (min-width: 992px) {
   .menu {
     position: fixed;
@@ -103,6 +139,9 @@ a.request p {
     width: 250px;
     margin-right: 65px;
   }
+  .vid-container iframe {
+    width: 50% !important;
+  }
 }
 @media (max-width: 992px) {
   .hidden {
@@ -112,8 +151,21 @@ a.request p {
   .navbar.hidden {
     opacity: 1;
   }
+  .vid-container iframe {
+    height: 200px !important;
+    width: 85% !important;
+  }
 }
 
+.nav-menu .to-top {
+  position: fixed;
+  z-index: 3;
+  bottom: 30px;
+  right: 20px;
+}
+.vid-container iframe {
+  height: 400px;
+}
 .menu-open.hidden {
   z-index: 1;
 }
@@ -163,4 +215,14 @@ a.request p {
 }
 .primary-btn:hover h5 {
   color: #b0a07b !important;
+}
+
+.footer .links a:hover h1 {
+  color: #b0a07b !important;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer a:hover img {
+  filter: brightness(2);
+  transition: filter 0.5s ease-in-out;
 }

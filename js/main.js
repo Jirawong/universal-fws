@@ -1,10 +1,7 @@
-document.addEventListener("DOMContentLoaded", function () {
-  var video = document.getElementById("home-video");
-  video.play();
-});
 $(document).ready(function () {
-  var video = $("#home-video")[0];
-  video.play();
+  $(".port-toggle").click(function () {
+    $(this).toggleClass("active");
+  });
   $(".menu-open").on("click", function () {
     $(".menu").addClass("active");
     $(".menu-sm").addClass("active");
@@ -23,7 +20,7 @@ $(document).ready(function () {
     loop: true,
     items: 1,
     nav: false,
-    dots: true,
+    dots: false,
   });
   $("#Carousel-1-1").owlCarousel({
     loop: true,
