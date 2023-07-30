@@ -10,12 +10,12 @@ a {
   text-decoration: none;
 }
 
-.topic a.active h4 {
+.topic a.active h2 {
   text-decoration: underline 2px #b0a07b;
   text-underline-offset: 5px;
 }
 
-.topic a:hover h4 {
+.topic a:hover h2 {
   color: #b0a07b !important;
   text-decoration: underline 2px #b0a07b;
   text-underline-offset: 5px;
@@ -115,7 +115,7 @@ a {
   border-bottom: 25px solid #b0a07b;
 }
 
-.hover-wine a:hover h1 {
+.hover-wine a:hover h3 {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
