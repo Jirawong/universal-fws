@@ -87,7 +87,7 @@
   transition: transform 0.5s ease-in-out;
 }
 
-.team .member:hover h1 {
+.team .member:hover h2 {
   color: black !important;
   transition: color 0.5s ease-in-out;
 }
