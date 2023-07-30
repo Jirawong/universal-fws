@@ -37,18 +37,17 @@
   text-underline-offset: 5px;
 }
 
+.stats .icon-container {
+  width: 40px;
+  height: 40px;
+}
+
 .stats h1 {
   letter-spacing: 3.2px;
 }
 
 .present {
   position: relative;
-}
-.present {
-  background-image: url(../assets/about/Group\ 53.png);
-  background-size: 120% !important;
-  background-position: -100px 0px;
-  background-repeat: no-repeat;
 }
 
 .present .container {
@@ -67,5 +66,28 @@
 
 .underline {
   text-decoration: underline #b0a07d 1px;
-  text-underline-offset: px;
+  text-underline-offset: 5px;
+}
+
+.team .img-container {
+  border-radius: 160px;
+  background: linear-gradient(to top, #646464, #d9d9d9);
+  overflow: hidden;
+}
+
+.team .member img {
+  transition: all 0.3s ease-in-out;
+}
+.team .member h1 {
+  transition: all 0.3s ease-in-out;
+}
+
+.team .member:hover img {
+  transform: scale(1.05) translateY(-10px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.team .member:hover h1 {
+  color: black !important;
+  transition: color 0.5s ease-in-out;
 }

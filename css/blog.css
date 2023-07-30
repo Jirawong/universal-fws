@@ -7,6 +7,30 @@
   overflow: hidden;
 }
 
+.header.whats-new {
+  position: relative;
+  background-image: url(../assets/png/whats-new.png);
+  background-repeat: no-repeat;
+  background-size: 140%;
+  overflow: hidden;
+}
+
+@media (max-width: 1400px) {
+  .header.whats-new {
+    max-width: 500%;
+    background-size: 200%;
+    background-position: center;
+  }
+}
+
+@media (max-width: 700px) {
+  .header.whats-new {
+    max-width: 500%;
+    background-size: 400% !important;
+    background-position: center;
+  }
+}
+
 .next-3,
 .prev-3 {
   max-width: 100px;
@@ -26,6 +50,26 @@
   z-index: 2;
 }
 
+.content-list .bg,
+.content .bg {
+  z-index: -1;
+}
+
+.content-list .bg-left,
+.content .bg-left {
+  top: -150px;
+  left: -150px;
+  transform: rotate(15deg);
+  width: 25vw;
+}
+.content-list .bg-right,
+.content .bg-right {
+  top: 150px;
+  right: -250px;
+  transform: rotate(-15deg);
+  width: 35vw;
+}
+
 .content .overlay,
 .content-list .overlay {
   position: absolute;
@@ -38,14 +82,13 @@
   opacity: 0.05;
 }
 
-.content,
-.content-list {
+.content-list,
+.content {
   position: relative;
-  background-image: url("../assets/about/Group\ 53.png");
-  background-size: 125%;
+  overflow: hidden;
 }
 
-.content-list .row a:hover h3 {
+.content-list .row a:hover h2 {
   color: #b0a07d !important;
   transition: color 0.3s ease-in-out;
 }

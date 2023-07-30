@@ -44,7 +44,10 @@
   transition: background-color 0.2s ease-in-out;
 }
 .map a:hover h1 {
+  color: black !important;
+  text-decoration: none !important;
   border-bottom: 2px solid black;
+  transition: none;
 }
 
 .map .location .usa {
@@ -212,24 +215,24 @@ textarea {
 }
 
 /*customers*/
-@media (min-width: 1601px) {
+@media (min-width: 1200px) {
   .customers .logo {
     height: 200px !important;
     width: 200px !important;
   }
 }
 
-@media (min-width: 430px) and (max-width: 1600px) {
+@media (min-width: 630px) and (max-width: 1200px) {
   .customers .logo {
-    height: 25vh !important;
-    width: 25vh !important;
+    height: 175px !important;
+    width: 175px !important;
   }
 }
 
-@media (max-width: 429px) {
+@media (max-width: 630px) {
   .customers .logo {
-    height: 125px !important;
-    width: 125px !important;
+    height: 135px !important;
+    width: 135px !important;
   }
   .customers .col a img {
     width: 75px !important;
@@ -256,6 +259,9 @@ textarea {
 .blog .col-6 {
   width: 50%;
 }
+.blog-container .white-btn {
+  transition: all 0.3s ease-in-out;
+}
 .blog-container .white-btn:hover {
   background-color: #b0a07b !important;
   transition: background-color 0.3s ease-in-out;
@@ -267,6 +273,9 @@ textarea {
 
 .blog-container .text-container:hover h3 {
   color: #b0a07b !important;
+  transition: color 0.3s ease-in-out;
+}
+.blog-container .text-container h3 {
   transition: color 0.3s ease-in-out;
 }
 
@@ -287,28 +296,11 @@ textarea {
   .vid-container iframe {
     width: 560px;
   }
-
-  .present {
-    background-image: url(../assets/about/Group\ 53.png);
-    background-size: 150% !important;
-    background-repeat: no-repeat;
-  }
 }
 @media (max-width: 992px) {
   .contact-us iframe {
     height: 50vh !important;
   }
-
-  .present {
-    background-image: url(../assets/about/Group\ 53.png);
-    background-size: 150% !important;
-  }
-}
-
-.present {
-  background-image: url(../assets/about/Group\ 53.png);
-  background-size: 300%;
-  background-position: -175px 0;
 }
 
 .google-map-btn:hover {
@@ -316,10 +308,6 @@ textarea {
   color: #b0a07b !important;
 
   transition: all 0.5s ease-in-out;
-}
-
-.our-story-img img {
-  animation: fadeIn-from-left 1.5s linear;
 }
 
 form input {
