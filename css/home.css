@@ -3,6 +3,14 @@
   max-width: 530px !important;
 }
 
+@keyframes ping {
+  75%,
+  100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
 @media (min-width: 992px) {
   .our-story .col-lg-8 {
     max-width: 57%;
@@ -34,15 +42,36 @@
 }
 
 .map .dot {
+  position: relative;
+
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: black;
 }
+
+.map .dot::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #b0a07b;
+  z-index: -1;
+}
+
+.map a:hover .dot::before {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+  background-color: #b0a07b;
+}
 .map a:hover .dot {
+  position: relative;
   background-color: #b0a07b;
   transition: background-color 0.2s ease-in-out;
 }
+
 .map a:hover h1 {
   color: black !important;
   text-decoration: none !important;
