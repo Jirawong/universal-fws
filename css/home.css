@@ -52,13 +52,14 @@
 
 .map .dot::before {
   content: " ";
+  animation: ping 1.5s cubic-bezier(0, 0, 0.2, 1) infinite;
   position: absolute;
   top: 0;
   left: 0;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #b0a07b;
+  background-color: rgba(0, 0, 0, 0.6);
   z-index: -1;
 }
 
@@ -230,8 +231,8 @@ textarea {
   margin-top: 30px !important;
 }
 .owl-theme .owl-dots .owl-dot span {
-  height: 20px !important;
-  width: 20px !important;
+  height: 15px !important;
+  width: 15px !important;
 }
 
 .owl-theme .owl-dots .owl-dot.active span {
