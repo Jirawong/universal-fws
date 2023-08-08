@@ -25,6 +25,10 @@
       href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,300;1,400;1,500&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!--navbar-->
@@ -39,7 +43,7 @@
           </div>
         </button>
       </div>
-      <div class="menu" id="menu">
+      <div class="menu d-lg-block d-none" id="menu">
         <div class="d-flex flex-column h-100 px-5">
           <div class="d-lg-flex align-items-center mt-6 d-none">
             <a href="index.html" class="logo-container pe-3">
@@ -49,7 +53,7 @@
               ><img src="assets/svg/close.svg" alt=""
             /></a>
           </div>
-          <div class="d-flex d-lg-none justify-content-end mt-5">
+          <div class="d-flex d-lg-none justify-content-end mt-8">
             <a type="button" class="close-menu"
               ><img src="assets/svg/close.svg" alt=""
             /></a>
@@ -60,10 +64,27 @@
           </a>
           <a
             type="button"
-            class="ms-auto mt-3"
+            class="port-toggle ms-auto mt-3"
             data-bs-toggle="collapse"
             data-bs-target="#port"
-            ><h1 class="text-light fs-6">PORTFOLIO</h1>
+            id=""
+          >
+            <div class="d-flex align-items-center">
+              <h1 class="text-light fs-6 me-2">PORTFOLIO</h1>
+              <div class="icon mb-2">
+                <svg width="20.414" height="11.414" viewBox="0 0 20.414 11.414">
+                  <g
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                    data-name="Group 130"
+                  >
+                    <path d="m.707.707 10 10" data-name="Line 30" />
+                    <path d="m19.707.707-10 10" data-name="Line 31" />
+                  </g>
+                </svg>
+              </div>
+            </div>
           </a>
           <div class="collapse" id="port">
             <div class="d-flex flex-column">
@@ -79,7 +100,11 @@
               <a href="portfolio.html" class="ms-auto mt-2"
                 ><h1 class="fs-6 font-ITC text-light">Others</h1>
               </a>
-              <div class="line border border-1 border-light ms-9"></div>
+              <div class="d-flex">
+                <div
+                  class="ms-auto line border border-1 border-light px-7 my-3"
+                ></div>
+              </div>
             </div>
           </div>
           <a href="whats-new.html" class="ms-auto mt-3"
@@ -171,26 +196,76 @@
           </div>
         </div>
       </div>
-      <div class="navbar bg-dark-1">
-        <div class="container d-flex justify-content-between">
-          <a href="index.html" class="logo w-lg-50"
-            ><img
-              src="assets/about/svg/logo.svg"
-              class="img-fluid d-lg-block d-none"
-              alt="" />
-            <img
-              src="assets/svg/logo-mobile.svg"
-              class="img-fluid ms-5 d-lg-none d-block"
-              alt=""
-          /></a>
-          <div class="d-flex align-items-center">
-            <a href="#" class="request me-lg-5">
-              <p class="fs-6 font-ITC fst-italic mb-0 fw-light">
-                Request Price
-              </p>
-            </a>
-            <div class="contacts d-lg-block d-none">
-              <a href="#" class="px-3">
+      <div class="menu-sm d-lg-none d-block" id="menu">
+        <div class="d-flex flex-column h-100 w-100 px-5">
+          <div class="d-flex justify-content-end pt-4">
+            <a type="button" class="close-menu"
+              ><img src="assets/svg/close.svg" alt=""
+            /></a>
+          </div>
+
+          <a href="About.html" class="ms-auto mt-5"
+            ><h1 class="text-light fs-6">ABOUT</h1>
+          </a>
+          <a
+            type="button"
+            class="port-toggle ms-auto mt-3"
+            data-bs-toggle="collapse"
+            data-bs-target="#port"
+          >
+            <div class="d-flex align-items-center">
+              <h1 class="text-light fs-6 me-2">PORTFOLIO</h1>
+              <div class="icon mb-2 pb-1">
+                <svg width="20.414" height="11.414" viewBox="0 0 20.414 11.414">
+                  <g
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                    data-name="Group 130"
+                  >
+                    <path d="m.707.707 10 10" data-name="Line 30" />
+                    <path d="m19.707.707-10 10" data-name="Line 31" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="port">
+            <div class="d-flex flex-column">
+              <a href="portfolio.html" class="ms-auto mt-3"
+                ><h1 class="fs-6 font-ITC text-light">Wine</h1>
+              </a>
+              <a href="portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Spirits</h1>
+              </a>
+              <a href="portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Accessories</h1>
+              </a>
+              <a href="portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Others</h1>
+              </a>
+              <div class="d-flex">
+                <div
+                  class="ms-auto line border border-1 border-light my-3 px-6"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <a href="whats-new.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">What's new</h1>
+          </a>
+          <a href="Customers.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Customers</h1>
+          </a>
+          <a href="blogs.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Blog</h1>
+          </a>
+          <a href="index.html#contact-us" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Contact</h1>
+          </a>
+          <div class="d-flex mt-auto mb-6 d-lg-none align-items-center">
+            <div class="ms-auto contacts">
+              <a href="https://www.facebook.com/ufws.th" class="px-3">
                 <svg
                   width="9.956"
                   fill="#b0a07b"
@@ -202,7 +277,7 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="px-3">
+              <a href="https://www.instagram.com/ufws-th/" class="px-3">
                 <svg
                   width="18.591"
                   height="18.59"
@@ -220,7 +295,7 @@
                   />
                 </svg>
               </a>
-              <a href="#" class="px-3">
+              <a href="https://www.youtube.com/@UFWSThailand" class="px-3">
                 <svg
                   width="18.59"
                   height="13.013"
@@ -244,7 +319,100 @@
                   </g>
                 </svg>
               </a>
-              <a href="#" class="px-3">
+              <a href="mailto:admin@ufws.co.th" class="px-3">
+                <svg
+                  width="18.59"
+                  height="14.307"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.59 14.307"
+                >
+                  <g>
+                    <path
+                      d="m1.436.207 6.418 7.611a1.867 1.867 0 0 0 2.885 0L17.046.34a.678.678 0 0 1 .178-.147 2.1 2.1 0 0 0-.872-.191H2.241a2.1 2.1 0 0 0-.838.175c.011.012.023.02.033.032"
+                    />
+                    <path
+                      d="M18.253 1.066a.687.687 0 0 1-.124.209l-6.348 7.181a3.32 3.32 0 0 1-4.971 0L.35 1.148a.5.5 0 0 1-.034-.047A2.172 2.172 0 0 0 0 2.228v9.891a2.191 2.191 0 0 0 2.193 2.188h14.2a2.191 2.191 0 0 0 2.193-2.188V2.228a2.17 2.17 0 0 0-.337-1.162"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar bg-dark-1 fixed-top">
+        <div class="container d-flex justify-content-between">
+          <a href="index.html" class="logo w-lg-50"
+            ><img
+              src="assets/about/svg/logo.svg"
+              class="img-fluid d-lg-block d-none"
+              alt="" />
+            <img
+              src="assets/svg/logo-mobile.svg"
+              class="img-fluid ms-5 d-lg-none d-block"
+              alt=""
+          /></a>
+          <div class="d-flex align-items-center">
+            <a href="#" class="request me-lg-5">
+              <p class="fs-6 font-ITC fw-light mb-0">Request Price</p>
+            </a>
+
+            <div class="contacts d-lg-block d-none">
+              <a href="https://www.facebook.com/ufws.th" class="px-3">
+                <svg
+                  width="9.956"
+                  fill="#b0a07b"
+                  height="18.591"
+                  viewBox="0 0 9.956 18.591"
+                >
+                  <path
+                    d="m9.3 10.458.52-3.365H6.592V4.91a1.683 1.683 0 0 1 1.9-1.818h1.464V.228A17.845 17.845 0 0 0 7.351 0c-2.659 0-4.4 1.612-4.4 4.529v2.564H0v3.364h2.955v8.133h3.637v-8.132Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/ufws-th/" class="px-3">
+                <svg
+                  width="18.591"
+                  height="18.59"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.591 18.59"
+                >
+                  <path
+                    d="M14.216 3.32a1.091 1.091 0 1 0 1.09 1.09 1.09 1.09 0 0 0-1.09-1.09"
+                  />
+                  <path
+                    d="M9.371 4.715a4.581 4.581 0 1 0 4.58 4.58 4.586 4.586 0 0 0-4.58-4.58m0 7.515a2.935 2.935 0 1 1 2.935-2.935 2.937 2.937 0 0 1-2.935 2.935"
+                  />
+                  <path
+                    d="M13.006 18.59H5.584A5.59 5.59 0 0 1 0 13.006V5.584A5.59 5.59 0 0 1 5.584 0h7.422a5.591 5.591 0 0 1 5.585 5.584v7.422a5.591 5.591 0 0 1-5.585 5.584M5.584 1.749a3.839 3.839 0 0 0-3.835 3.835v7.422a3.839 3.839 0 0 0 3.835 3.835h7.422a3.839 3.839 0 0 0 3.835-3.835V5.584a3.839 3.839 0 0 0-3.835-3.835Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/@UFWSThailand" class="px-3">
+                <svg
+                  width="18.59"
+                  height="13.013"
+                  data-name=""
+                  viewBox="0 0 18.59 13.013"
+                  fill="#b0a07b"
+                >
+                  <defs>
+                    <clipPath id="a">
+                      <path
+                        fill="none"
+                        d="M0 0h18.59v13.013H0z"
+                        data-name="Rectangle 74"
+                      />
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#a)">
+                    <path
+                      d="M14.51 0H4.079A4.08 4.08 0 0 0 0 4.079v4.855a4.08 4.08 0 0 0 4.079 4.079H14.51a4.08 4.08 0 0 0 4.08-4.079V4.079A4.08 4.08 0 0 0 14.51 0m-2.544 6.779a.652.652 0 0 1-.318.318l-3.78 1.746a.651.651 0 0 1-.923-.591V4.761a.651.651 0 0 1 .923-.59l3.779 1.745a.651.651 0 0 1 .318.863"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="mailto:admin@ufws.co.th" class="px-3">
                 <svg
                   width="18.59"
                   height="14.307"
@@ -270,22 +438,30 @@
           </div>
         </div>
       </div>
+      <a href="#top" class="to-top">
+        <img src="assets/svg/up.svg" alt="" />
+      </a>
     </div>
 
     <!--head-->
-    <div class="video-container">
+
+    <div class="video-container mt-6 mt-lg-0" id="top">
       <video
-        src="assets/home/SHORT UNIVERSAL.webm"
-        id="opening"
-        style="width: 100%"
         autoplay
-      ></video>
+        loop
+        muted
+        playsinline
+        style="width: 100%"
+        id="home-video"
+      >
+        <source src="SHORT-UNIVERSAL.mp4" type="video/mp4" />
+      </video>
     </div>
 
     <div class="our-story mt-lg-5 container-fluid">
       <div class="row">
-        <div class="col-lg-8 col-12 pe-0 d-lg-block d-none">
-          <div class="img d-flex h-100">
+        <div class="col-lg-8 col-12 pe-0 d-lg-block d-none ps-0">
+          <div class="wow fadeIn-left img our-story-img d-flex h-100">
             <img
               class="img-fluid mt-auto"
               src="assets/home/Group 132.png"
@@ -293,23 +469,21 @@
             />
           </div>
         </div>
-        <div class="col-lg-4 col-12 pe-0">
-          <div class="box pt-lg-5 px-3">
+        <div class="wow fadeIn-right col-lg-4 col-12 pe-0">
+          <div class="box px-lg-0 px-3">
             <div class="text-container text-center pt-lg-5">
-              <h1 class="pt-5 fs-3">our STORY</h1>
+              <h1 class="pt-5">our STORY</h1>
             </div>
             <div class="icon d-flex justify-content-center">
               <img class="img-fluid" src="assets/Group 16.svg" alt="" />
             </div>
             <div class="text-container pt-5">
-              <h2 class="text-dark-5 font-ITC fst-italic fs-6 pb-5">
-                Evolving from The California Wine Company<span
-                  class="d-lg-block d-none"
-                >
-                  with 26 years of experience,</span
-                >
+              <h2 class="text-dark font-ITC fw-light pb-5">
+                Evolving from The California Wine Company with 26 years of
+                experience,
               </h2>
-              <h3 class="text-dark-1 fs-9 lh-lg-lg lh-lg">
+
+              <h3 class="text-dark-1 lh-lg-lg lh-lg">
                 Out comes the Universal Fine Wine and Spirit Co. Our humble
                 story began 26 years ago when our founder, Charles Huang, de
                 cided to introduce the taste of California to Thailand during
@@ -322,17 +496,17 @@
               </h3>
             </div>
 
-            <div class="d-flex justify-content-center pt-5 d-lg-block d-none">
+            <div class="d-lg-flex justify-content-center pt-5 d-none">
               <a href="#" class="read-more">
-                <div class="read-more bg-primary-1 px-7 py-3">
-                  <h5 class="text-light text-center mb-0 fs-9">READ MORE</h5>
+                <div class="read-more bg-primary-1 primary-btn px-7 py-3">
+                  <h3 class="text-light text-center mb-0">READ MORE</h3>
                 </div>
               </a>
             </div>
           </div>
         </div>
         <div class="col-lg-8 col-12 mt-4 pe-0 d-lg-none d-block ps-0">
-          <div class="img d-flex h-100">
+          <div class="img our-story-img d-flex h-100">
             <img
               class="img-fluid mt-auto"
               src="assets/home/Group 132.png"
@@ -344,7 +518,7 @@
           <div class="d-flex justify-content-center pt-5 d-lg-none d-block">
             <a href="#" class="read-more">
               <div class="read-more bg-primary-1 px-5 py-3">
-                <h5 class="text-light text-center mb-0 fs-9">READ MORE</h5>
+                <h3 class="text-light text-center mb-0">READ MORE</h3>
               </div>
             </a>
           </div>
@@ -354,32 +528,136 @@
 
     <div class="category mt-8">
       <div class="text-center d-flex flex-column align-items-center">
-        <h1 class="text-dark fs-3">CATEGORIES</h1>
+        <h1 class="text-dark">CATEGORIES</h1>
         <div class="d-flex justify-content-center my-4">
           <img src="assets/Group 16.svg" alt="" />
         </div>
         <div
           class="d-lg-flex d-block justify-content-between align-items-center w-25 mb-5 mt-4"
         >
-          <a href="#"
-            ><h1 class="text-dark mb-4 mb-lg-0 fs-6 font-ITC">Wine</h1></a
-          >
+          <div class="wine">
+            <a href="" class="active"
+              ><h2 class="text-dark mb-4 mb-lg-0 font-ITC">Wine</h2></a
+            >
+            <div class="hover-wine px-4 py-4">
+              <div class="triangle"></div>
+              <a href="portfolio.html" class="all">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/dots.svg" alt="" />
+                  </div>
+                  <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                    all
+                  </h3>
+                </div>
+              </a>
+              <a href="portfolio.html" class="usa">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-usa.png" alt="" />
+                  </div>
+                  <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                    U.S.A (CALIFORNIA)
+                  </h3>
+                </div>
+              </a>
+              <a href="portfolio.html" class="france">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-france.png" alt="" />
+                  </div>
+                  <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                    FRANCE
+                  </h3>
+                </div>
+              </a>
+              <a href="portfolio.html" class="argen">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-argentina.png" alt="" />
+                  </div>
+                  <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                    ARGENTINA
+                  </h3>
+                </div>
+              </a>
+              <a href="portfolio.html" class="australia">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-aut.png" alt="" />
+                  </div>
+                  <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                    AUSTRALIA
+                  </h3>
+                </div>
+              </a>
+              <a href="portfolio.html" class="chile">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-chile.png" alt="" />
+                  </div>
+                  <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                    CHILE
+                  </h3>
+                </div>
+              </a>
+              <a href="portfolio.html" class="germany">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-germany.png" alt="" />
+                  </div>
+                  <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                    GERMANY
+                  </h3>
+                </div>
+              </a>
+              <a href="portfolio.html" class="italy">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-italy.png" alt="" />
+                  </div>
+                  <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                    ITALY
+                  </h3>
+                </div>
+              </a>
+              <a href="portfolio.html" class="newz">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-newz.png" alt="" />
+                  </div>
+                  <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                    NEW ZEALAND
+                  </h3>
+                </div>
+              </a>
+              <a href="portfolio.html" class="spain">
+                <div class="d-flex align-items-center py-2">
+                  <div class="flag-container">
+                    <img src="assets/png/flag-spain.png" alt="" />
+                  </div>
+                  <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                    SPAIN
+                  </h3>
+                </div>
+              </a>
+            </div>
+          </div>
+
           <div
             class="line border-start border-primary-2 d-lg-block d-none"
             style="padding-top: 40px"
           ></div>
 
           <a href="#"
-            ><h1 class="text-dark mb-4 mb-lg-0 fs-6 font-ITC">Spirits</h1></a
+            ><h2 class="text-dark mb-4 mb-lg-0 font-ITC">Spirits</h2></a
           >
           <div
             class="line border-start border-primary-2 d-lg-block d-none"
             style="padding-top: 40px"
           ></div>
           <a href="#"
-            ><h1 class="text-dark mb-lg-0 mb-4 fs-6 font-ITC">
-              Accessories
-            </h1></a
+            ><h2 class="text-dark mb-lg-0 mb-4 font-ITC">Accessories</h2></a
           >
 
           <div
@@ -387,7 +665,7 @@
             style="padding-top: 40px"
           ></div>
           <a href="#"
-            ><h1 class="text-dark mb-4 mb-lg-0 fs-6 font-ITC">Others</h1></a
+            ><h2 class="text-dark mb-4 mb-lg-0 font-ITC">Others</h2></a
           >
         </div>
         <div class="map d-lg-block d-none">
@@ -442,25 +720,32 @@
 
     <div class="present mt-lg-9">
       <div class="overlay"></div>
-      <div class="container text-center pt-8">
-        <h1 class="text-dark fs-3 fw-normal text-uppercase mb-4">
-          PROUDLY PRESENT
-        </h1>
-        <img src="assets/Group 16.svg" alt="" />
-        <h2 class="text-dark font-ITC fst-italic fs-6 mt-5">
-          With our first harvest in 1978 we made a pioneering decision to focus
-          <br class="d-lg-block d-none" />on the production of Merlot
-        </h2>
-        <h3 class="text-dark fw-normal fs-9 lh-lg mt-4">
-          Though many Napa Valley wineries were using Merlot as a blending grape
-          <br class="d-lg-block d-none" />in the late seventies, few were
-          exploring the potential of this varietal
-          <br class="d-lg-block d-none" />as a stand-alone wine.
-        </h3>
-        <div class="vid-container mt-4 mb-6">
+      <div class="bg">
+        <img src="assets/png/wine-bg-left.png" class="bg-left" alt="" />
+
+        <img src="assets/png/wine-bg-right.png" class="bg-right" alt="" />
+      </div>
+
+      <div class="wow fadeIn container pt-8">
+        <div class="text-container text-center px-lg-0 px-4">
+          <h1 class="text-dark fw-normal mb-4">proudly PRESENT</h1>
+          <img src="assets/Group 16.svg" alt="" />
+          <h2 class="text-dark font-ITC fw-light mt-5">
+            With our first harvest in 1978 we made a pioneering decision to
+            focus
+            <br class="d-lg-block d-none" />on the production of Merlot
+          </h2>
+          <h3 class="text-dark fw-normal lh-lg mt-4">
+            Though many Napa Valley wineries were using Merlot as a blending
+            grape
+            <br class="d-lg-block d-none" />in the late seventies, few were
+            exploring the potential of this varietal
+            <br class="d-lg-block d-none" />as a stand-alone wine.
+          </h3>
+        </div>
+
+        <div class="vid-container text-center mt-4 w-100 h-100">
           <iframe
-            width="430"
-            height="315"
             src="https://www.youtube.com/embed/wh8pMInp_3Q?controls=0"
             title="YouTube video player"
             frameborder="0"
@@ -470,9 +755,9 @@
         </div>
       </div>
 
-      <div class="what-new pt-5">
+      <div class="what-new mt-5 wow fadeIn">
         <div class="text-container text-center pt-5">
-          <h1 class="pt-5 fs-3">WHAT’S NEW</h1>
+          <h1 class="pt-5">what’s NEW</h1>
         </div>
         <div class="icon d-flex justify-content-center">
           <img class="img-fluid" src="assets/Group 16.svg" alt="" />
@@ -677,11 +962,6 @@
           </div>
         </div>
         <div class="carousel-1-1 d-flex align-items-center">
-          <a type="button" class="prev-1">
-            <div class="w-50 mb-6 me-auto d-lg-none d-block">
-              <img src="assets/svg/left.svg" class="img-fluid" alt="" />
-            </div>
-          </a>
           <div
             id="Carousel-1-1"
             class="owl-carousel owl-theme slide my-5 d-lg-none d-block"
@@ -689,7 +969,7 @@
           >
             <div class="owl-carousel-item active">
               <a href="#">
-                <div class="img px-6">
+                <div class="img px-5">
                   <img
                     class="img-fluid"
                     src="assets/png/whats-new-1.png"
@@ -700,7 +980,7 @@
             </div>
             <div class="owl-carousel-item">
               <a href="#">
-                <div class="img px-6">
+                <div class="img px-5">
                   <img
                     class="img-fluid"
                     src="assets/png/whats-new-2.png"
@@ -711,7 +991,7 @@
             </div>
             <div class="owl-carousel-item">
               <a href="#">
-                <div class="img px-6">
+                <div class="img px-5">
                   <img
                     class="img-fluid"
                     src="assets/png/whats-new-3.png"
@@ -722,7 +1002,7 @@
             </div>
             <div class="owl-carousel-item">
               <a href="#">
-                <div class="img px-6">
+                <div class="img px-5">
                   <img
                     class="img-fluid"
                     src="assets/png/whats-new-1.png"
@@ -732,22 +1012,19 @@
               </a>
             </div>
           </div>
-          <a type="button" class="next-1">
-            <div class="w-50 mb-6 ms-auto d-lg-none d-block">
-              <img src="assets/svg/right.svg" class="img-fluid" alt="" />
-            </div>
-          </a>
         </div>
       </div>
 
-      <div class="customers pb-5 container">
+      <div class="customers wow fadeIn pb-5 container">
         <div class="text-container text-center pt-5">
-          <h1 class="pt-5 fs-3">CUSTOMERS</h1>
+          <h1 class="pt-5">CUSTOMERS</h1>
         </div>
         <div class="icon d-flex justify-content-center mb-5">
           <img class="img-fluid" src="assets/Group 16.svg" alt="" />
         </div>
-        <div class="carousel-2 d-flex align-items-center">
+        <div
+          class="carousel-2 d-flex align-items-center justify-content-between"
+        >
           <a type="button" class="prev-2">
             <div class="w-50 d-lg-none d-block">
               <img src="assets/svg/left.svg" class="img-fluid" alt="" />
@@ -757,94 +1034,150 @@
           ></a>
           <div id="Carousel-2" class="owl-carousel">
             <div class="owl-carousel-item active">
-              <div class="d-flex flex-lg-column align-items-center">
-                <div class="row me-lg-0 me-1">
-                  <div class="col-lg m-lg-0 m-2 col-12 mb-lg-4">
+              <div class="d-lg-block d-none">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/themall.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/centara_grand.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/Minor.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/est.33.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/ibis.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center mt-3"
+                >
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/gourmet.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/ribs.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/cape_kudu.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/prime19.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/tops.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-lg-none d-block">
+                <div class="row me-1">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/themall.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg m-lg-0 m-2 col-12">
+                  <div class="col-6">
                     <div
-                      class="logo ms-lg-0 ms-auto bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 bg-white mb-3 d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/centara_grand.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg m-lg-0 m-2 col-12">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/Minor.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg m-lg-0 m-2 col-12">
+                  <div class="col-6">
                     <div
-                      class="logo ms-lg-0 ms-auto bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/est.33.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg m-lg-0 m-2 col-12">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/ibis.png" alt="" />
                       </a>
                     </div>
                   </div>
-                </div>
-                <div class="row me-lg-0 me-1">
-                  <div class="col-lg m-lg-0 m-2 col-12">
+                  <div class="col-6">
                     <div
-                      class="logo bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/gourmet.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg m-lg-0 m-2 col-12">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/ribs.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg m-lg-0 m-2 col-12">
+                  <div class="col-6">
                     <div
-                      class="logo bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/cape_kudu.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg m-lg-0 m-2 col-12">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/prime19.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg m-lg-0 m-2 col-12">
+                  <div class="col-6">
                     <div
-                      class="logo bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/tops.png" alt="" />
@@ -855,94 +1188,150 @@
               </div>
             </div>
             <div class="owl-carousel-item">
-              <div class="d-flex flex-lg-column align-items-center">
-                <div class="row me-lg-0 me-1">
-                  <div class="col-lg col-12 mb-lg-4">
+              <div class="d-lg-block d-none">
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/themall.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/centara_grand.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/Minor.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/est.33.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/ibis.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="d-flex justify-content-center align-items-center mt-3"
+                >
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/gourmet.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/ribs.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/cape_kudu.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/prime19.png" alt="" />
+                    </a>
+                  </div>
+                  <div class="logo bg-white p-5 mx-2">
+                    <a href="#">
+                      <img src="assets/brand-logo/tops.png" alt="" />
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="d-lg-none d-block">
+                <div class="row me-1">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/themall.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg col-12">
+                  <div class="col-6">
                     <div
-                      class="logo ms-lg-0 ms-auto bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 bg-white mb-3 d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/centara_grand.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg col-12">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/Minor.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg col-12">
+                  <div class="col-6">
                     <div
-                      class="logo ms-lg-0 ms-auto bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/est.33.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg col-12">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo ms-lg-0 ms-auto bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/ibis.png" alt="" />
                       </a>
                     </div>
                   </div>
-                </div>
-                <div class="row me-lg-0 me-1">
-                  <div class="col-lg col-12">
+                  <div class="col-6">
                     <div
-                      class="logo bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/gourmet.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg col-12">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/ribs.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg col-12">
+                  <div class="col-6">
                     <div
-                      class="logo bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/cape_kudu.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg col-12">
+                  <div class="col-6 pe-0">
                     <div
-                      class="logo bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 ms-lg-0 ms-auto mb-3 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/prime19.png" alt="" />
                       </a>
                     </div>
                   </div>
-                  <div class="col-lg col-12">
+                  <div class="col-6">
                     <div
-                      class="logo bg-white d-flex align-items-center justify-content-center"
+                      class="logo p-4 bg-white d-flex align-items-center justify-content-center"
                     >
                       <a href="#">
                         <img src="assets/brand-logo/tops.png" alt="" />
@@ -963,8 +1352,8 @@
         </div>
         <div class="d-flex justify-content-center pt-5 pb-5">
           <a href="#">
-            <div class="read-more bg-primary-1 py-2 px-6">
-              <h5 class="text-light text-center pt-2 fs-9">READ MORE</h5>
+            <div class="read-more primary-btn bg-primary-1 py-2 px-6">
+              <h3 class="text-light text-center pt-2">READ MORE</h3>
             </div>
           </a>
         </div>
@@ -974,7 +1363,7 @@
     <div class="blog">
       <div class="container px-lg-7 px-0">
         <div class="text-container text-center pt-5">
-          <h1 class="pt-5 fs-3">BLOG</h1>
+          <h1 class="pt-5">BLOG</h1>
         </div>
         <div class="icon d-flex justify-content-center">
           <img class="img-fluid" src="assets/Group 16.svg" alt="" />
@@ -982,68 +1371,70 @@
         <div class="pt-5">
           <div class="blog-container d-lg-block d-none">
             <div class="row">
-              <div class="col-6 px-0">
-                <div class="img d-flex">
+              <div class="col-6 px-0 wow fadeIn-left">
+                <div class="img w-100">
                   <img
-                    class="img-fluid ms-auto"
+                    class="img-fluid w-100"
                     src="assets/home/alessandro-d-antonio-cduu7eQuvP0-unsplash.png"
                     alt=""
                   />
                 </div>
               </div>
-              <div class="col-6 px-0">
-                <div class="text-container px-5 pt-5 mt-5">
-                  <h3 class="fs-9">23 May 2023</h3>
-                  <h2 class="fs-6 font-ITC fst-italic pt-3">
+              <div class="col-6 wow fadeIn-left bg-light-2 px-0">
+                <div
+                  class="text-container d-flex flex-column align-items-center text-start px-5 pt-5 mt-5"
+                >
+                  <h2 class="w-100">23 May 2023</h2>
+                  <h2 class="font-ITC fw-light pt-3">
                     Your Ultimate Guide to How Much Alcohol Is in Every Type of
-                    Wine It May Be Higher Than You Think Wine It May Be Higher
-                    Than You Think
+                    Wine
                   </h2>
-                  <h3 class="fs-9 pt-5">
+                  <h3 class="lh-lg">
                     Though many Napa Valley wineries were using Merlot as a
                     blending grape in the late seventies, few were exploring the
                     potential of this varietal as a stand-alone wine.
                   </h3>
-                </div>
-                <div class="d-flex justify-content-center pt-5">
-                  <a href="#">
-                    <div class="border border-2 border-primary-1 px-6 py-1">
-                      <h3 class="text-primary-1 text-center pt-2 fs-9">
+                  <a href="#" class="mt-6">
+                    <div
+                      class="bg-white white-btn border border-2 border-primary-1 px-6 py-1"
+                    >
+                      <h4 class="text-primary-1 fs-9 text-center pt-2">
                         READ MORE
-                      </h3>
+                      </h4>
                     </div>
                   </a>
                 </div>
               </div>
 
-              <div class="col-6 px-0">
-                <div class="text-container px-5 pt-5 mt-5">
-                  <h3 class="fs-9">23 May 2023</h3>
-                  <h2 class="pt-3 fs-6 font-ITC fst-italic">
+              <div class="col-6 wow fadeIn-right px-0 bg-light-2">
+                <div
+                  class="text-container d-flex flex-column align-items-center text-start px-5 pt-5 mt-5"
+                >
+                  <h2 class="w-100">23 May 2023</h2>
+                  <h2 class="pt-3 font-ITC fw-light">
                     Your Ultimate Guide to How Much Alcohol Is in Every Type of
-                    Wine It May Be Higher Than You Think Wine It May Be Higher
-                    Than You Think
+                    Wine
                   </h2>
-                  <h3 class="pt-5 fs-9">
+                  <h3 class="pt-5 lh-lg">
                     Though many Napa Valley wineries were using Merlot as a
                     blending grape in the late seventies, few were exploring the
                     potential of this varietal as a stand-alone wine.
                   </h3>
-                </div>
-                <div class="d-flex justify-content-center pt-5">
                   <a href="#">
-                    <div class="border border-2 border-primary-1 px-6 py-1">
-                      <h3 class="text-primary-1 text-center pt-2 fs-9">
+                    <div
+                      class="bg-white border border-2 white-btn border-primary-1 px-6 py-1 mt-5"
+                    >
+                      <h4 class="text-primary-1 text-center fs-9 pt-2">
                         READ MORE
-                      </h3>
+                      </h4>
                     </div>
                   </a>
                 </div>
               </div>
-              <div class="col-6 px-0">
-                <div class="img">
+              <div class="col-6 wow fadeIn-right px-0">
+                <div class="img w-100">
                   <img
-                    class="img-fluid"
+                    class="img-fluid w-100"
                     src="assets/home/theme-photos-mR_lv_G7XCY-unsplash.png"
                     alt=""
                   />
@@ -1089,7 +1480,7 @@
                       <div class="d-flex justify-content-center pb-6">
                         <a href="#">
                           <div
-                            class="border border-2 border-primary-1 px-4 py-1"
+                            class="bg-white border border-2 border-primary-1 px-4 py-1"
                           >
                             <h3 class="text-primary-1 text-center pt-2 fs-9">
                               READ MORE
@@ -1126,7 +1517,7 @@
                       <div class="d-flex justify-content-center pb-6">
                         <a href="#">
                           <div
-                            class="border border-2 border-primary-1 px-4 py-1"
+                            class="bg-white border border-2 border-primary-1 px-4 py-1"
                           >
                             <h3 class="text-primary-1 text-center pt-2 fs-9">
                               READ MORE
@@ -1145,10 +1536,10 @@
               </a>
             </div>
           </div>
-          <div class="d-flex justify-content-center pt-5">
+          <div class="d-flex justify-content-center py-5">
             <a href="#">
-              <div class="read-more">
-                <h3 class="text-light text-center pt-3 fs-9">VIEW ALL</h3>
+              <div class="read-more primary-btn bg-primary-1 px-6 py-3">
+                <h3 class="text-light text-center mb-0">VIEW ALL</h3>
               </div>
             </a>
           </div>
@@ -1161,36 +1552,36 @@
         <img src="assets/home/Group 96.png" class="img-fluid" alt="" />
       </div>
       <div class="row location-map mt-8">
-        <div class="col-lg-4 col-12">
+        <div class="col-lg-4 col-12 wow fadeIn-left">
           <div class="box px-4 d-flex flex-column ms-auto">
             <div class="text-center">
-              <h1 class="mb-0 fs-3 text-dark">CONTACT US</h1>
+              <h1 class="mb-0 text-dark">CONTACT us</h1>
             </div>
             <div class="d-flex justify-content-center">
               <img src="assets/Group 16.svg" alt="" />
             </div>
             <div class="mb-4 mt-6">
-              <h1 class="text-dark mb-0 font-ITC fst-itc fs-6">
+              <h2 class="text-dark mb-0 font-ITC">
                 If you need assistance or If you have any specific questions or
                 concerns about how we can help your business, please feel free
                 to contact us.
-              </h1>
+              </h2>
             </div>
             <form action="/submit-form">
               <div
                 class="name-input d-flex align-items-center bg-white me-lg-5 my-3 px-3 py-2"
               >
-                <h1 class="mb-0 text-dark fs-9 text-uppercase me-3">
+                <h3 class="mb-0 text-dark text-uppercase me-3">
                   Name <span style="color: #ff0000">*</span>
-                </h1>
+                </h3>
                 <input type="text" id="name" name="name" required />
               </div>
               <div
                 class="telephone-input d-flex align-items-center bg-white me-lg-5 my-3 px-3 py-2"
               >
-                <h1 class="mb-0 text-dark fs-9 text-uppercase me-3">
+                <h3 class="mb-0 text-dark text-uppercase me-3">
                   Telephone <span style="color: #ff0000">*</span>
-                </h1>
+                </h3>
                 <input
                   type="telephone"
                   id="telephone"
@@ -1201,16 +1592,16 @@
               <div
                 class="email-input d-flex align-items-center bg-white me-lg-5 my-3 px-3 py-2"
               >
-                <h1 class="mb-0 text-dark fs-9 text-uppercase me-3">
-                  Email <span style="color: #ff0000">*</span>
-                </h1>
+                <h3 class="mb-0 text-dark text-uppercase me-3">
+                  E-mail <span style="color: #ff0000">*</span>
+                </h3>
                 <input type="email" id="email" name="email" required />
               </div>
 
               <div class="email-input d-flex bg-white me-lg-5 my-3 px-3 py-2">
-                <h1 class="mb-0 text-dark fs-9 text-uppercase me-3">
-                  Message <span style="color: #ff0000">*</span>
-                </h1>
+                <h3 class="mb-0 text-dark text-uppercase d-flex">
+                  Message <span class="ps-1" style="color: #ff0000">*</span>
+                </h3>
                 <textarea
                   id="message"
                   name="message"
@@ -1219,11 +1610,13 @@
                   required
                 ></textarea>
               </div>
-              <div class="d-flex justify-content-center mt-5 mb-5 mb-lg-0">
+              <div
+                class="d-flex justify-content-center mt-5 mb-5 me-lg-5 mb-lg-0"
+              >
                 <input
                   type="submit"
                   value="SEND"
-                  class="bg-primary-1 text-white py-2 px-7"
+                  class="bg-primary-1 primary-btn text-white py-2 px-7"
                 />
               </div>
             </form>
@@ -1241,98 +1634,108 @@
       </div>
 
       <div class="our-location mt-9 container pb-9">
-        <h1 class="mb-0 text-dark fs-3 text-center">our LOCATION</h1>
+        <h1 class="mb-0 text-dark text-center">our LOCATION</h1>
         <div class="d-flex justify-content-center my-4">
           <img src="assets/Group 16.svg" alt="" />
         </div>
         <div class="row">
-          <div class="col-lg-4 col-12 mt-lg-0 mt-5">
+          <div class="wow fadeIn col-lg-4 col-12 mt-lg-0 mt-5">
             <div class="text-center">
-              <h1 class="mb-4 font-ITC fst-itc fs-6">Head Office</h1>
-              <h2 class="mb-4 fs-9 px-5">
+              <h2 class="mb-4 font-ITC">Head Office</h2>
+              <h3 class="mb-4 px-5">
                 1376/1-5 Rama 3 Road, Chongnonsi, Yannawa, Bangkok 10120
                 Thailand
-              </h2>
+              </h3>
             </div>
             <div class="contact ms-8">
               <div class="tel my-3 d-flex align-items-center">
                 <div class="icon-container pe-3">
                   <img src="assets/svg/tel.svg" alt="" />
                 </div>
-                <h1 class="mb-0 text-dark fs-9">+669 2325 5626</h1>
+                <h3 class="mb-0 text-dark">+669 2325 5626</h3>
               </div>
               <div class="email my-3 d-flex align-items-center">
                 <div class="icon-container pe-3">
                   <img src="assets/svg/email.svg" alt="" />
                 </div>
-                <h1 class="mb-0 text-dark fs-9">admin.bangkok@ufws.co.th</h1>
+                <h3 class="mb-0 text-dark">admin.bangkok@ufws.co.th</h3>
               </div>
               <div class="location my-3 d-flex align-items-center">
                 <div class="icon-container pe-4 ps-1">
                   <img src="assets/svg/location.svg" alt="" />
                 </div>
-                <a href="#" class="mb-0 text-white py-1 px-2 fs-9 bg-dark-1">
+                <a
+                  href="#"
+                  class="mb-0 text-white google-map-btn py-1 px-2 fs-9 bg-dark-1"
+                >
                   GOOGLE MAP
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-12 mt-lg-0 mt-5">
+          <div class="wow fadeIn delay-1 col-lg-4 col-12 mt-lg-0 mt-5">
             <div class="text-center">
-              <h1 class="mb-4 font-ITC fst-itc fs-6">Wine Outlet Huahin</h1>
-              <h2 class="mb-4 fs-9 px-3">
-                27/109 Petchkasem Road, Huahin, Prachuap Khiri Khan, 77110
-                Thailand
-              </h2>
+              <h2 class="mb-4 font-ITC">Wine Outlet Huahin</h2>
+              <h3 class="mb-4 px-3">
+                27/109 Petchkasem Road, Huahin, <br />
+                Prachuap Khiri Khan, 77110 Thailand
+              </h3>
             </div>
             <div class="contact ms-8">
               <div class="tel my-3 d-flex align-items-center">
                 <div class="icon-container pe-3">
                   <img src="assets/svg/tel.svg" alt="" />
                 </div>
-                <h1 class="mb-0 text-dark fs-9">+66 2115 5227</h1>
+                <h3 class="mb-0 text-dark">+66 2115 5227</h3>
               </div>
               <div class="email my-3 d-flex align-items-center">
                 <div class="icon-container pe-3">
                   <img src="assets/svg/email.svg" alt="" />
                 </div>
-                <h1 class="mb-0 text-dark fs-9">admin_huahin@ufws.co.th</h1>
+                <h3 class="mb-0 text-dark">admin_huahin@ufws.co.th</h3>
               </div>
               <div class="location my-3 d-flex align-items-center">
                 <div class="icon-container pe-4 ps-1">
                   <img src="assets/svg/location.svg" alt="" />
                 </div>
-                <a href="#" class="mb-0 text-white py-1 px-2 fs-9 bg-dark-1">
+                <a
+                  href="#"
+                  class="mb-0 google-map-btn text-white py-1 px-2 fs-9 bg-dark-1"
+                >
                   GOOGLE MAP
                 </a>
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-12 mt-lg-0 mt-5">
+          <div class="wow fadeIn delay-2 col-lg-4 col-12 mt-lg-0 mt-5">
             <div class="text-center">
-              <h1 class="mb-4 font-ITC fst-itc fs-6">Wine Outlet Phuket</h1>
-              <h2 class="mb-4 fs-9 px-5">
-                365 Srisoonthorn Road, Cherntalay, Phuket, 83110 Thailand
-              </h2>
+              <h2 class="mb-4 font-ITC">Wine Outlet Phuket</h2>
+              <h3 class="mb-4 px-5">
+                365 Srisoonthorn Road, Cherntalay, <br />
+                Phuket, 83110 Thailand
+              </h3>
             </div>
             <div class="contact ms-8">
               <div class="tel my-3 d-flex align-items-center">
                 <div class="icon-container pe-3">
                   <img src="assets/svg/tel.svg" alt="" />
                 </div>
-                <h1 class="mb-0 text-dark fs-9">+668 2106 0544</h1>
+                <h3 class="mb-0 text-dark">+668 2106 0544</h3>
               </div>
               <div class="email my-3 d-flex align-items-center">
                 <div class="icon-container pe-3">
                   <img src="assets/svg/email.svg" alt="" />
                 </div>
-                <h1 class="mb-0 text-dark fs-9">admin.phuket@ufws.co.th</h1>
+                <h3 class="mb-0 text-dark">admin.phuket@ufws.co.th</h3>
               </div>
               <div class="location my-3 d-flex align-items-center">
                 <div class="icon-container pe-4 ps-1">
                   <img src="assets/svg/location.svg" alt="" />
                 </div>
-                <a href="#" class="mb-0 text-white py-1 px-2 fs-9 bg-dark-1">
+                <a
+                  href="#"
+                  class="mb-0 google-map-btn text-white py-1 px-2 fs-9 bg-dark-1"
+                >
                   GOOGLE MAP
                 </a>
               </div>
@@ -1355,59 +1758,59 @@
             <div
               class="contacts d-flex justify-content-center justify-content-lg-start"
             >
-              <a href="#"
+              <a href="https://www.facebook.com/ufws.th"
                 ><img src="assets/about/svg/facebook.svg" class="pe-3" alt=""
               /></a>
-              <a href="#"
+              <a href="https://www.instagram.com/ufws-th/"
                 ><img src="assets/about/svg/instagram.svg" class="px-3" alt=""
               /></a>
-              <a href="#"
+              <a href="https://www.youtube.com/@UFWSThailand"
                 ><img src="assets/about/svg/youtube.svg" class="px-3" alt=""
               /></a>
-              <a href="#"
+              <a href="mailto:admin@ufws.co.th"
                 ><img src="assets/about/svg/email.svg" class="px-3" alt=""
               /></a>
             </div>
           </div>
-          <div class="mt-4">
+          <div class="links mt-4">
             <div class="row text-lg-start text-center">
-              <div class="col-lg-4 col-12 pe-0">
-                <a href="#"
+              <div class="col-lg-4 col-12 pe-lg-0">
+                <a href="About.html"
                   ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
                     About
                   </h1>
                 </a>
               </div>
-              <div class="col-lg-4 col-12 mt-lg-0 mt-4 pe-0">
-                <a href="#"
+              <div class="col-lg-4 col-12 mt-lg-0 mt-4 pe-lg-0">
+                <a href="portfolio.html"
                   ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
                     portfolio
                   </h1>
                 </a>
               </div>
-              <div class="col-lg-4 col-12 mt-lg-0 mt-4 pe-0">
-                <a href="#"
+              <div class="col-lg-4 col-12 mt-lg-0 mt-4 pe-lg-0">
+                <a href="whats-new.html"
                   ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
                     what's new
                   </h1>
                 </a>
               </div>
-              <div class="col-lg-4 col-12 mt-4 pe-0">
-                <a href="#"
+              <div class="col-lg-4 col-12 mt-4 pe-lg-0">
+                <a href="Customers.html"
                   ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
                     customers
                   </h1>
                 </a>
               </div>
-              <div class="col-lg-4 col-12 mt-4 pe-0">
-                <a href="#"
+              <div class="col-lg-4 col-12 mt-4 pe-lg-0">
+                <a href="blogs.html"
                   ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
                     blog
                   </h1>
                 </a>
               </div>
-              <div class="col-lg-4 col-12 mt-4">
-                <a href="#"
+              <div class="col-lg-4 col-12 mt-4 pe-lg-0">
+                <a href="index.html#contact-us"
                   ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
                     contact
                   </h1>
@@ -1419,9 +1822,12 @@
       </div>
       <div class="bg-primary-1 py-1"></div>
       <div class="bg-dark-4 text-center">
-        <h1 class="mb-0 text-white py-4" style="font-size: 12px">
+        <h1 class="mb-0 text-white py-4" style="font-size: 12px !important">
           Copyright © 2023 | UNIVERSAL FINE WINE & SPIRITS COMPANY LIMITED. All
-          Rights Reserved. | Designed By Belong-To
+          Rights Reserved. |
+          <a href="http://www.belongto.com/main/index.html" class="belongto">
+            <span class="text-white">Designed By Belong-To</span></a
+          >
         </h1>
       </div>
     </div>
@@ -1437,8 +1843,24 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
-    <script src="js/main.js"></script>
-
     <script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="js/main.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".category a").hover(
+          function () {
+            $("a.active").removeClass("active");
+          },
+          function () {
+            $(".wine a").addClass("active");
+          }
+        );
+      });
+    </script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>

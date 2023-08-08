@@ -5,6 +5,10 @@
   width: 100%;
 }
 
+.menu {
+  position: fixed;
+  top: 0;
+}
 @media (max-width: 992px) {
   .header {
     background-image: url(../assets/about/Group\ 651.png);
@@ -33,29 +37,17 @@
   text-underline-offset: 5px;
 }
 
+.stats .icon-container {
+  width: 40px;
+  height: 40px;
+}
+
 .stats h1 {
   letter-spacing: 3.2px;
 }
 
 .present {
   position: relative;
-  overflow: hidden;
-}
-.present .background {
-  position: absolute;
-  width: 114%;
-  z-index: -1;
-}
-
-.present .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 0;
-  background-color: #b0a07d;
-  opacity: 0.1;
 }
 
 .present .container {
@@ -70,4 +62,32 @@
     top: 75px;
     width: 100%;
   }
+}
+
+.underline {
+  text-decoration: underline #b0a07d 1px;
+  text-underline-offset: 5px;
+}
+
+.team .img-container {
+  border-radius: 160px;
+  background: linear-gradient(to top, #646464, #d9d9d9);
+  overflow: hidden;
+}
+
+.team .member img {
+  transition: all 0.3s ease-in-out;
+}
+.team .member h1 {
+  transition: all 0.3s ease-in-out;
+}
+
+.team .member:hover img {
+  transform: scale(1.05) translateY(-10px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.team .member:hover h2 {
+  color: black !important;
+  transition: color 0.5s ease-in-out;
 }

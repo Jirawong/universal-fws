@@ -4,6 +4,7 @@ $(document).ready(function () {
     items: 1,
     nav: false,
     dots: false,
+    autoWidth: true,
   });
   $(".prev-3").click(function () {
     $("#Carousel-3").trigger("prev.owl.carousel");

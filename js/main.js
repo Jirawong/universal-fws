@@ -1,19 +1,26 @@
 $(document).ready(function () {
+  $(".port-toggle").click(function () {
+    $(this).toggleClass("active");
+  });
   $(".menu-open").on("click", function () {
     $(".menu").addClass("active");
+    $(".menu-sm").addClass("active");
+    $(".navbar").addClass("hidden");
+    $(".menu-open").addClass("hidden");
   });
 
   $(".close-menu").on("click", function () {
     $(".menu").removeClass("active");
+    $(".menu-sm").removeClass("active");
+    $(".navbar").removeClass("hidden");
+    $(".menu-open").removeClass("hidden");
   });
-  var video = $("#opening")[0];
-  video.volume = 0.05;
 
   $("#Carousel-1").owlCarousel({
     loop: true,
     items: 1,
     nav: false,
-    dots: true,
+    dots: false,
   });
   $("#Carousel-1-1").owlCarousel({
     loop: true,
