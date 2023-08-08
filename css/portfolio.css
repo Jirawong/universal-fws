@@ -7,7 +7,7 @@
   overflow: hidden;
 }
 a {
-  text-decoration: none;
+  text-decoration: none !important;
 }
 
 .topic a.active h2 {
@@ -19,7 +19,6 @@ a {
   color: #b0a07b !important;
   text-decoration: underline 2px #b0a07b;
   text-underline-offset: 5px;
-
   transition: all 0.3s ease-in-out;
 }
 .topic a:hover {
@@ -93,10 +92,33 @@ a {
 
 .topic .wine {
   position: relative;
+  
 }
+
+@keyframes fade {
+  0% {
+    display: none;
+  }
+  100% {
+    display: block;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    display: block;
+
+  }
+  100% {
+    display: none;
+  }
+}
+
+
+
 .wine:hover .hover-wine {
-  display: block;
-  opacity: 1;
+  animation: fade 0.1s ease forwards;
+  animation-delay: 0.5s;
 }
 .hover-wine {
   position: absolute;
@@ -104,10 +126,8 @@ a {
   width: 264px;
   left: -65px;
   top: 50px;
-  z-index: 100;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  animation: fadeout 0.1s ease forwards;
+  animation-delay: 0.25s;
 }
 .hover-wine .triangle {
   position: absolute;
@@ -124,6 +144,14 @@ a {
   text-decoration: underline;
   text-underline-offset: 5px;
 }
+.hover-wine a {
+  text-decoration: none !important;
+}
+.hover-wine a:hover {
+  text-decoration: none !important;
+}
+
+
 
 .topic {
   position: relative;
