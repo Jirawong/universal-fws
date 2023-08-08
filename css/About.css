@@ -1,0 +1,93 @@
+.banner-bg img {
+  position: absolute;
+  z-index: -1;
+  top: -20px;
+  width: 100%;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+}
+@media (max-width: 992px) {
+  .header {
+    background-image: url(../assets/about/Group\ 651.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}
+
+.header {
+  z-index: 1;
+}
+
+.header h1,
+.header h2 {
+  animation: fadeIn 1s ease-in;
+}
+
+.our-story h2 {
+  line-height: 30px;
+}
+
+.our-mission u {
+  text-decoration: underline;
+  text-decoration-color: #b0a07d;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 5px;
+}
+
+.stats .icon-container {
+  width: 40px;
+  height: 40px;
+}
+
+.stats h1 {
+  letter-spacing: 3.2px;
+}
+
+.present {
+  position: relative;
+}
+
+.present .container {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 540px) {
+  .banner-bg img {
+    position: absolute;
+    z-index: -1;
+    top: 75px;
+    width: 100%;
+  }
+}
+
+.underline {
+  text-decoration: underline #b0a07d 1px;
+  text-underline-offset: 5px;
+}
+
+.team .img-container {
+  border-radius: 160px;
+  background: linear-gradient(to top, #646464, #d9d9d9);
+  overflow: hidden;
+}
+
+.team .member img {
+  transition: all 0.3s ease-in-out;
+}
+.team .member h1 {
+  transition: all 0.3s ease-in-out;
+}
+
+.team .member:hover img {
+  transform: scale(1.05) translateY(-10px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.team .member:hover h2 {
+  color: black !important;
+  transition: color 0.5s ease-in-out;
+}

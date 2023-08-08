@@ -1,0 +1,78 @@
+.header {
+  position: relative;
+  background-image: url(../assets/png/customers.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+
+.header .text-container {
+  z-index: 1;
+}
+
+.brand {
+  overflow-x: hidden !important;
+}
+.brand .logo:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+.topic a.active h4 {
+  text-decoration: underline 2px #b0a07b;
+  text-underline-offset: 5px;
+}
+
+.topic a:hover h4 {
+  color: #b0a07b !important;
+  transition: color 0.3s ease-in-out;
+  text-decoration: underline 2px #b0a07b;
+  text-underline-offset: 5px;
+}
+
+@media (min-width: 1700px) {
+  .brand .logo {
+    height: 200px;
+    width: 200px;
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 1500px) and (max-width: 1699px) {
+  .brand .logo {
+    height: 175px !important;
+    width: 175px !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1500px) {
+  .brand .logo {
+    height: 155px !important;
+    width: 155px !important;
+    margin-left: 0 !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .brand .logo {
+    height: 145px !important;
+    width: 145px !important;
+    margin-left: 0 !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .brand .logo {
+    height: 145px;
+    width: 145px;
+  }
+}
+
+.brand .logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.brand .logo {
+  box-shadow: rgb(228, 225, 225) 0px 0px 15px 1px;
+}

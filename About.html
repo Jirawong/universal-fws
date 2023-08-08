@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/About.css" />
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.carousel.css" />
+    <link rel="stylesheet" href="js/owlcarousel/assets/owl.theme.default.css" />
+    <!--custom Bootstrap-->
+    <link rel="stylesheet" href="scss/custom.css" />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--navbar-->
+    <div class="nav-menu">
+      <div class="menu-btn d-lg-block d-none">
+        <button class="menu-open">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center bg-dark-1 py-3 px-4"
+          >
+            <h1 class="fs-9 text-light">MENU</h1>
+            <img src="assets/svg/menubtn.svg" alt="" />
+          </div>
+        </button>
+      </div>
+      <div class="menu d-lg-block d-none" id="menu">
+        <div class="d-flex flex-column h-100 px-5">
+          <div class="d-lg-flex align-items-center mt-6 d-none">
+            <a href="index.html" class="logo-container pe-3">
+              <img src="assets/about/svg/logo.svg" class="img-fluid" alt="" />
+            </a>
+            <a type="button" class="close-menu"
+              ><img src="assets/svg/close.svg" alt=""
+            /></a>
+          </div>
+          <div class="d-flex d-lg-none justify-content-end mt-8">
+            <a type="button" class="close-menu"
+              ><img src="assets/svg/close.svg" alt=""
+            /></a>
+          </div>
+
+          <a href="About.html" class="ms-auto mt-5"
+            ><h1 class="text-light fs-6">ABOUT</h1>
+          </a>
+          <a
+            type="button"
+            class="port-toggle ms-auto mt-3"
+            data-bs-toggle="collapse"
+            data-bs-target="#port"
+            id=""
+          >
+            <div class="d-flex align-items-center">
+              <h1 class="text-light fs-6 me-2">PORTFOLIO</h1>
+              <div class="icon mb-2">
+                <svg width="20.414" height="11.414" viewBox="0 0 20.414 11.414">
+                  <g
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                    data-name="Group 130"
+                  >
+                    <path d="m.707.707 10 10" data-name="Line 30" />
+                    <path d="m19.707.707-10 10" data-name="Line 31" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="port">
+            <div class="d-flex flex-column">
+              <a href="portfolio.html" class="ms-auto mt-3"
+                ><h1 class="fs-6 font-ITC text-light">Wine</h1>
+              </a>
+              <a href="portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Spirits</h1>
+              </a>
+              <a href="portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Accessories</h1>
+              </a>
+              <a href="portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Others</h1>
+              </a>
+              <div class="d-flex">
+                <div
+                  class="ms-auto line border border-1 border-light px-7 my-3"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <a href="whats-new.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">What's new</h1>
+          </a>
+          <a href="Customers.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Customers</h1>
+          </a>
+          <a href="blogs.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Blog</h1>
+          </a>
+          <a href="index.html#contact-us" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Contact</h1>
+          </a>
+          <div class="d-flex mt-auto mb-6 d-lg-none align-items-center">
+            <div class="ms-auto contacts">
+              <a href="#" class="px-3">
+                <svg
+                  width="9.956"
+                  fill="#b0a07b"
+                  height="18.591"
+                  viewBox="0 0 9.956 18.591"
+                >
+                  <path
+                    d="m9.3 10.458.52-3.365H6.592V4.91a1.683 1.683 0 0 1 1.9-1.818h1.464V.228A17.845 17.845 0 0 0 7.351 0c-2.659 0-4.4 1.612-4.4 4.529v2.564H0v3.364h2.955v8.133h3.637v-8.132Z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="px-3">
+                <svg
+                  width="18.591"
+                  height="18.59"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.591 18.59"
+                >
+                  <path
+                    d="M14.216 3.32a1.091 1.091 0 1 0 1.09 1.09 1.09 1.09 0 0 0-1.09-1.09"
+                  />
+                  <path
+                    d="M9.371 4.715a4.581 4.581 0 1 0 4.58 4.58 4.586 4.586 0 0 0-4.58-4.58m0 7.515a2.935 2.935 0 1 1 2.935-2.935 2.937 2.937 0 0 1-2.935 2.935"
+                  />
+                  <path
+                    d="M13.006 18.59H5.584A5.59 5.59 0 0 1 0 13.006V5.584A5.59 5.59 0 0 1 5.584 0h7.422a5.591 5.591 0 0 1 5.585 5.584v7.422a5.591 5.591 0 0 1-5.585 5.584M5.584 1.749a3.839 3.839 0 0 0-3.835 3.835v7.422a3.839 3.839 0 0 0 3.835 3.835h7.422a3.839 3.839 0 0 0 3.835-3.835V5.584a3.839 3.839 0 0 0-3.835-3.835Z"
+                  />
+                </svg>
+              </a>
+              <a href="#" class="px-3">
+                <svg
+                  width="18.59"
+                  height="13.013"
+                  data-name=""
+                  viewBox="0 0 18.59 13.013"
+                  fill="#b0a07b"
+                >
+                  <defs>
+                    <clipPath id="a">
+                      <path
+                        fill="none"
+                        d="M0 0h18.59v13.013H0z"
+                        data-name="Rectangle 74"
+                      />
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#a)">
+                    <path
+                      d="M14.51 0H4.079A4.08 4.08 0 0 0 0 4.079v4.855a4.08 4.08 0 0 0 4.079 4.079H14.51a4.08 4.08 0 0 0 4.08-4.079V4.079A4.08 4.08 0 0 0 14.51 0m-2.544 6.779a.652.652 0 0 1-.318.318l-3.78 1.746a.651.651 0 0 1-.923-.591V4.761a.651.651 0 0 1 .923-.59l3.779 1.745a.651.651 0 0 1 .318.863"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="#" class="px-3">
+                <svg
+                  width="18.59"
+                  height="14.307"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.59 14.307"
+                >
+                  <g>
+                    <path
+                      d="m1.436.207 6.418 7.611a1.867 1.867 0 0 0 2.885 0L17.046.34a.678.678 0 0 1 .178-.147 2.1 2.1 0 0 0-.872-.191H2.241a2.1 2.1 0 0 0-.838.175c.011.012.023.02.033.032"
+                    />
+                    <path
+                      d="M18.253 1.066a.687.687 0 0 1-.124.209l-6.348 7.181a3.32 3.32 0 0 1-4.971 0L.35 1.148a.5.5 0 0 1-.034-.047A2.172 2.172 0 0 0 0 2.228v9.891a2.191 2.191 0 0 0 2.193 2.188h14.2a2.191 2.191 0 0 0 2.193-2.188V2.228a2.17 2.17 0 0 0-.337-1.162"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-sm d-lg-none d-block" id="menu">
+        <div class="d-flex flex-column h-100 w-100 px-5">
+          <div class="d-flex justify-content-end pt-4">
+            <a type="button" class="close-menu"
+              ><img src="assets/svg/close.svg" alt=""
+            /></a>
+          </div>
+
+          <a href="About.html" class="ms-auto mt-5"
+            ><h1 class="text-light fs-6">ABOUT</h1>
+          </a>
+          <a
+            type="button"
+            class="port-toggle ms-auto mt-3"
+            data-bs-toggle="collapse"
+            data-bs-target="#port"
+          >
+            <div class="d-flex align-items-center">
+              <h1 class="text-light fs-6 me-2">PORTFOLIO</h1>
+              <div class="icon mb-2 pb-1">
+                <svg width="20.414" height="11.414" viewBox="0 0 20.414 11.414">
+                  <g
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                    data-name="Group 130"
+                  >
+                    <path d="m.707.707 10 10" data-name="Line 30" />
+                    <path d="m19.707.707-10 10" data-name="Line 31" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="port">
+            <div class="d-flex flex-column">
+              <a href="portfolio.html" class="ms-auto mt-3"
+                ><h1 class="fs-6 font-ITC text-light">Wine</h1>
+              </a>
+              <a href="portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Spirits</h1>
+              </a>
+              <a href="portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Accessories</h1>
+              </a>
+              <a href="portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Others</h1>
+              </a>
+              <div class="d-flex">
+                <div
+                  class="ms-auto line border border-1 border-light my-3 px-6"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <a href="whats-new.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">What's new</h1>
+          </a>
+          <a href="Customers.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Customers</h1>
+          </a>
+          <a href="blogs.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Blog</h1>
+          </a>
+          <a href="index.html#contact-us" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Contact</h1>
+          </a>
+          <div class="d-flex mt-auto mb-6 d-lg-none align-items-center">
+            <div class="ms-auto contacts">
+              <a href="https://www.facebook.com/ufws.th" class="px-3">
+                <svg
+                  width="9.956"
+                  fill="#b0a07b"
+                  height="18.591"
+                  viewBox="0 0 9.956 18.591"
+                >
+                  <path
+                    d="m9.3 10.458.52-3.365H6.592V4.91a1.683 1.683 0 0 1 1.9-1.818h1.464V.228A17.845 17.845 0 0 0 7.351 0c-2.659 0-4.4 1.612-4.4 4.529v2.564H0v3.364h2.955v8.133h3.637v-8.132Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/ufws-th/" class="px-3">
+                <svg
+                  width="18.591"
+                  height="18.59"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.591 18.59"
+                >
+                  <path
+                    d="M14.216 3.32a1.091 1.091 0 1 0 1.09 1.09 1.09 1.09 0 0 0-1.09-1.09"
+                  />
+                  <path
+                    d="M9.371 4.715a4.581 4.581 0 1 0 4.58 4.58 4.586 4.586 0 0 0-4.58-4.58m0 7.515a2.935 2.935 0 1 1 2.935-2.935 2.937 2.937 0 0 1-2.935 2.935"
+                  />
+                  <path
+                    d="M13.006 18.59H5.584A5.59 5.59 0 0 1 0 13.006V5.584A5.59 5.59 0 0 1 5.584 0h7.422a5.591 5.591 0 0 1 5.585 5.584v7.422a5.591 5.591 0 0 1-5.585 5.584M5.584 1.749a3.839 3.839 0 0 0-3.835 3.835v7.422a3.839 3.839 0 0 0 3.835 3.835h7.422a3.839 3.839 0 0 0 3.835-3.835V5.584a3.839 3.839 0 0 0-3.835-3.835Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/@UFWSThailand" class="px-3">
+                <svg
+                  width="18.59"
+                  height="13.013"
+                  data-name=""
+                  viewBox="0 0 18.59 13.013"
+                  fill="#b0a07b"
+                >
+                  <defs>
+                    <clipPath id="a">
+                      <path
+                        fill="none"
+                        d="M0 0h18.59v13.013H0z"
+                        data-name="Rectangle 74"
+                      />
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#a)">
+                    <path
+                      d="M14.51 0H4.079A4.08 4.08 0 0 0 0 4.079v4.855a4.08 4.08 0 0 0 4.079 4.079H14.51a4.08 4.08 0 0 0 4.08-4.079V4.079A4.08 4.08 0 0 0 14.51 0m-2.544 6.779a.652.652 0 0 1-.318.318l-3.78 1.746a.651.651 0 0 1-.923-.591V4.761a.651.651 0 0 1 .923-.59l3.779 1.745a.651.651 0 0 1 .318.863"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="mailto:admin@ufws.co.th" class="px-3">
+                <svg
+                  width="18.59"
+                  height="14.307"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.59 14.307"
+                >
+                  <g>
+                    <path
+                      d="m1.436.207 6.418 7.611a1.867 1.867 0 0 0 2.885 0L17.046.34a.678.678 0 0 1 .178-.147 2.1 2.1 0 0 0-.872-.191H2.241a2.1 2.1 0 0 0-.838.175c.011.012.023.02.033.032"
+                    />
+                    <path
+                      d="M18.253 1.066a.687.687 0 0 1-.124.209l-6.348 7.181a3.32 3.32 0 0 1-4.971 0L.35 1.148a.5.5 0 0 1-.034-.047A2.172 2.172 0 0 0 0 2.228v9.891a2.191 2.191 0 0 0 2.193 2.188h14.2a2.191 2.191 0 0 0 2.193-2.188V2.228a2.17 2.17 0 0 0-.337-1.162"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar bg-dark-1 fixed-top">
+        <div class="container d-flex justify-content-between">
+          <a href="index.html" class="logo w-lg-50"
+            ><img
+              src="assets/about/svg/logo.svg"
+              class="img-fluid d-lg-block d-none"
+              alt="" />
+            <img
+              src="assets/svg/logo-mobile.svg"
+              class="img-fluid ms-5 d-lg-none d-block"
+              alt=""
+          /></a>
+          <div class="d-flex align-items-center">
+            <a href="#" class="request me-lg-5">
+              <p class="fs-6 font-ITC fw-light mb-0">Request Price</p>
+            </a>
+
+            <div class="contacts d-lg-block d-none">
+              <a href="https://www.facebook.com/ufws.th" class="px-3">
+                <svg
+                  width="9.956"
+                  fill="#b0a07b"
+                  height="18.591"
+                  viewBox="0 0 9.956 18.591"
+                >
+                  <path
+                    d="m9.3 10.458.52-3.365H6.592V4.91a1.683 1.683 0 0 1 1.9-1.818h1.464V.228A17.845 17.845 0 0 0 7.351 0c-2.659 0-4.4 1.612-4.4 4.529v2.564H0v3.364h2.955v8.133h3.637v-8.132Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/ufws-th/" class="px-3">
+                <svg
+                  width="18.591"
+                  height="18.59"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.591 18.59"
+                >
+                  <path
+                    d="M14.216 3.32a1.091 1.091 0 1 0 1.09 1.09 1.09 1.09 0 0 0-1.09-1.09"
+                  />
+                  <path
+                    d="M9.371 4.715a4.581 4.581 0 1 0 4.58 4.58 4.586 4.586 0 0 0-4.58-4.58m0 7.515a2.935 2.935 0 1 1 2.935-2.935 2.937 2.937 0 0 1-2.935 2.935"
+                  />
+                  <path
+                    d="M13.006 18.59H5.584A5.59 5.59 0 0 1 0 13.006V5.584A5.59 5.59 0 0 1 5.584 0h7.422a5.591 5.591 0 0 1 5.585 5.584v7.422a5.591 5.591 0 0 1-5.585 5.584M5.584 1.749a3.839 3.839 0 0 0-3.835 3.835v7.422a3.839 3.839 0 0 0 3.835 3.835h7.422a3.839 3.839 0 0 0 3.835-3.835V5.584a3.839 3.839 0 0 0-3.835-3.835Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/@UFWSThailand" class="px-3">
+                <svg
+                  width="18.59"
+                  height="13.013"
+                  data-name=""
+                  viewBox="0 0 18.59 13.013"
+                  fill="#b0a07b"
+                >
+                  <defs>
+                    <clipPath id="a">
+                      <path
+                        fill="none"
+                        d="M0 0h18.59v13.013H0z"
+                        data-name="Rectangle 74"
+                      />
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#a)">
+                    <path
+                      d="M14.51 0H4.079A4.08 4.08 0 0 0 0 4.079v4.855a4.08 4.08 0 0 0 4.079 4.079H14.51a4.08 4.08 0 0 0 4.08-4.079V4.079A4.08 4.08 0 0 0 14.51 0m-2.544 6.779a.652.652 0 0 1-.318.318l-3.78 1.746a.651.651 0 0 1-.923-.591V4.761a.651.651 0 0 1 .923-.59l3.779 1.745a.651.651 0 0 1 .318.863"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="mailto:admin@ufws.co.th" class="px-3">
+                <svg
+                  width="18.59"
+                  height="14.307"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.59 14.307"
+                >
+                  <g>
+                    <path
+                      d="m1.436.207 6.418 7.611a1.867 1.867 0 0 0 2.885 0L17.046.34a.678.678 0 0 1 .178-.147 2.1 2.1 0 0 0-.872-.191H2.241a2.1 2.1 0 0 0-.838.175c.011.012.023.02.033.032"
+                    />
+                    <path
+                      d="M18.253 1.066a.687.687 0 0 1-.124.209l-6.348 7.181a3.32 3.32 0 0 1-4.971 0L.35 1.148a.5.5 0 0 1-.034-.047A2.172 2.172 0 0 0 0 2.228v9.891a2.191 2.191 0 0 0 2.193 2.188h14.2a2.191 2.191 0 0 0 2.193-2.188V2.228a2.17 2.17 0 0 0-.337-1.162"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="d-lg-none d-block me-5">
+            <a type="button" class="menu-open"
+              ><img src="assets/svg/menubtn.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <a href="#top" class="to-top">
+        <img src="assets/svg/up.svg" alt="" />
+      </a>
+    </div>
+
+    <!--head-->
+
+    <div class="banner-bg" id="top">
+      <img src="assets/about/banner.png" class="d-lg-block d-none" alt="" />
+    </div>
+    <div class="header pt-lg-0 pt-5 mb-8">
+      <div class="fadeIn text-container text-center mt-lg-8 py-6 mb-lg-8 mb-7">
+        <h1 class="text-white">ABOUT</h1>
+        <h2 class="text-white">UNIVERSAL FINE WINE & SPIRITS</h2>
+      </div>
+      <div class="our-story container text-center">
+        <div
+          class="text-container bg-dark-1 py-lg-8 py-5 px-xxl-7 px-4 mx-lg-0 mx-4"
+        >
+          <h4 class="text-white mb-4 fw-light">our STORY</h4>
+
+          <h3 class="text-light mb-5 fw-light lh-lg">
+            Evolving from The California Wine Company with 26 years of
+            experience, out comes the Universal Fine Wine and Spirit Co. Our
+            humble story began 26 years ago when our founder, Charles Huang,
+            decided to introduce the taste of California to Thailand during the
+            time when the wine market was predominantly French and Italian
+            producers. Under his guidance, our portfolio continued to grow to
+            include some of the finest producers and most historic brands from
+            the world-famous Napa Valley such as Duckhorn, Shafer, Caymus,
+            Colgin, Chateau Montelena, Far Niente, Joseph Phelps, Schramsberg,
+            and many more.
+          </h3>
+          <h3 class="text-light mb-5 fw-light lh-lg">
+            Our Entrepreneurial spirit did not end with California selections as
+            we continue to grow to include major brands outside the US such as
+            Marques de Murrieta, Schloss Johannisburg, Mission Estate, Maison
+            Sichel, and many more.
+          </h3>
+          <h3 class="text-light mb-5 fw-light lh-lg">
+            Even in the hands of the second generation, our Entrepreneurial
+            spirit does not end as we continue to evolve with our client’s needs
+            by adding craft spirits into our portfolio.
+          </h3>
+          <h3 class="text-light fw-light lh-lg">
+            As time passes and the company continues to evolve, one thing
+            remains constant from day one which is our desire to best service
+            our clients and partners as one of the leading importers and
+            distributors of wine and spirits in Thailand.
+          </h3>
+        </div>
+      </div>
+    </div>
+
+    <!--content-->
+    <div class="our-mission container">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 col-lg-6 wow fadeIn-left">
+            <div class="img-container px-lg-0 px-4 mb-lg-0 mb-5">
+              <img
+                src="assets/about/Rectangle 129.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="col-sm-12 col-lg-6 pe-0 wow fadeIn-right">
+            <div
+              class="text-container px-lg-0 px-3 h-100 d-flex flex-column justify-content-center text-lg-start text-center"
+            >
+              <h1 class="mb-lg-7 mb-5 text-dark fw-light text-center">
+                our MISSION
+              </h1>
+              <h2 class="font-ITC fw-light text-dark-5 mb-4">
+                To share our passion for wine with the Thai market and offer our
+                customers a wide range of top-quality wines from all over the
+                world.
+              </h2>
+
+              <h3 class="text-dark fw-light lh-lg">
+                We work with hotels, restaurants, retailers and wine aficionados
+                throughout the country as well as conducting wine tasting
+                events, organize dinners with leading wine personalities,
+                vintners and winemakers from key wine producing regions to help
+                support and educate our clients.
+              </h3>
+              <h3 class="mt-4 text-dark fw-light lh-lg">
+                We strive to deliver the best quality wines and service to our
+                clients as well as share our knowledge to help expand the market
+                as a whole.
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="stats container mt-lg-8 mt-6 mb-lg-0 mb-6">
+      <div class="container-fluid">
+        <div class="row px-lg-0 px-sm-6 px-5 gy-lg-5 gy-5">
+          <div class="col-lg-3 col-6">
+            <div class="d-flex flex-column align-items-center">
+              <div class="icon-container mb-3">
+                <img
+                  src="assets/about/svg/partner.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <h1 class="text-dark fw-normal mb-0 fs-3">500 +</h1>
+              <h2 class="text-primary-2 fw-light mb-0 text-center">
+                Exclusive <br />
+                Partner
+              </h2>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="d-flex flex-column align-items-center">
+              <div class="icon-container mb-3">
+                <img
+                  src="assets/about/svg/employee.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <h1 class="text-dark fw-normal mb-0 fs-3">70 +</h1>
+              <h2 class="text-primary-2 fw-light mb-0 text-center">Employee</h2>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="d-flex flex-column align-items-center">
+              <div class="icon-container mb-3">
+                <img
+                  src="assets/about/svg/supplier.svg"
+                  class="img-fluid"
+                  alt=""
+                />
+              </div>
+              <h1 class="text-dark fw-normal mb-0 fs-3">50 +</h1>
+              <h2 class="text-primary-2 fw-light mb-0 text-center">Supplier</h2>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6">
+            <div class="d-flex flex-column align-items-center">
+              <div class="icon-container mb-3">
+                <img src="assets/about/svg/SKU.svg" class="img-fluid" alt="" />
+              </div>
+              <h1 class="text-dark fw-normal mb-0 fs-3">500 +</h1>
+              <h2 class="text-primary-2 fw-light mb-0 text-center">SKU</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="present mt-lg-9">
+      <div class="overlay"></div>
+
+      <div class="bg">
+        <img src="assets/png/wine-bg-left.png" class="bg-left" alt="" />
+
+        <img src="assets/png/wine-bg-right.png" class="bg-right" alt="" />
+      </div>
+
+      <div class="container wow fadeIn py-8">
+        <div class="text-container text-center px-lg-0 px-4">
+          <h1 class="text-dark fs-3 mb-4">proudly PRESENT</h1>
+          <img src="assets/Group 16.svg" alt="" />
+          <h2 class="text-dark font-ITC fw-light fs-6 mt-5">
+            With our first harvest in 1978 we made a pioneering decision to
+            focus
+            <br class="d-lg-block d-none" />on the production of Merlot
+          </h2>
+          <h3 class="text-dark fw-normal fs-9 lh-lg mt-4">
+            Though many Napa Valley wineries were using Merlot as a blending
+            grape
+            <br class="d-lg-block d-none" />in the late seventies, few were
+            exploring the potential of this varietal
+            <br class="d-lg-block d-none" />as a stand-alone wine.
+          </h3>
+        </div>
+
+        <div class="vid-container text-center mt-4 w-100 h-100">
+          <iframe
+            src="https://www.youtube.com/embed/wh8pMInp_3Q?controls=0"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen
+          ></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="team my-8 d-flex flex-column align-items-center">
+      <h1 class="text-dark text-center">TEAM</h1>
+      <div class="icon-container mb-5">
+        <img src="assets/Group 16.svg" alt="" />
+      </div>
+      <div class="row w-75">
+        <div class="col-lg-3 col-12 ps-0 wow fadeIn-right">
+          <div
+            class="member mt-lg-0 mt-5 d-flex flex-column align-items-center"
+          >
+            <div class="img-container px-xxxl-1">
+              <img
+                src="assets/about/MICHAEL HUANG.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+
+            <div class="mt-4 text-container text-center">
+              <h2 class="text-primary-1">MICHEAL HUANG</h2>
+              <h3 class="text-dark">Chief Executive Officer</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 ps-0 wow fadeIn-right delay-1">
+          <div
+            class="member mt-lg-0 mt-5 d-flex flex-column align-items-center"
+          >
+            <div class="img-container px-xxxl-1">
+              <img
+                src="assets/about/CHARLES HUANG.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+
+            <div class="mt-4 text-container text-center">
+              <h2 class="text-primary-1">CHARLES HUANG</h2>
+              <h3 class="text-dark">Founding Partner</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 ps-0 wow fadeIn-right delay-2">
+          <div
+            class="member mt-lg-0 mt-5 d-flex flex-column align-items-center"
+          >
+            <div class="img-container px-xxxl-1">
+              <img
+                src="assets/about/NEVEN VIDAS.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="mt-4 text-container text-center">
+              <h2 class="text-primary-1">NEVEN VIDAS</h2>
+              <h3 class="text-dark">Founding Partner</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-12 ps-0 wow fadeIn-right delay-3">
+          <div
+            class="member mt-lg-0 mt-5 d-flex flex-column align-items-center"
+          >
+            <div class="img-container px-xxxl-1">
+              <img
+                src="assets/about/NVEDIT nicolas-1.png"
+                class="img-fluid"
+                alt=""
+              />
+            </div>
+            <div class="mt-4 text-container text-center">
+              <h2 class="text-primary-1">NICOLAS VIDAS</h2>
+              <h3 class="text-dark">International Liason</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <div class="footer">
+      <div class="bg-dark-3 py-4 pb-5 container-fluid">
+        <div
+          class="container d-lg-flex d-block justify-content-between text-lg-start text-center"
+        >
+          <div>
+            <h1 class="text-white text-uppercase fs-9 fw-light my-4">
+              UNIVERSAL FINE WINE & SPIRITS <br />COMPANY LIMITED
+            </h1>
+            <div
+              class="contacts d-flex justify-content-center justify-content-lg-start"
+            >
+              <a href="https://www.facebook.com/ufws.th"
+                ><img src="assets/about/svg/facebook.svg" class="pe-3" alt=""
+              /></a>
+              <a href="https://www.instagram.com/ufws-th/"
+                ><img src="assets/about/svg/instagram.svg" class="px-3" alt=""
+              /></a>
+              <a href="https://www.youtube.com/@UFWSThailand"
+                ><img src="assets/about/svg/youtube.svg" class="px-3" alt=""
+              /></a>
+              <a href="mailto:admin@ufws.co.th"
+                ><img src="assets/about/svg/email.svg" class="px-3" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="links mt-4">
+            <div class="row text-lg-start text-center">
+              <div class="col-lg-4 col-12 pe-lg-0">
+                <a href="About.html"
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
+                    About
+                  </h1>
+                </a>
+              </div>
+              <div class="col-lg-4 col-12 mt-lg-0 mt-4 pe-lg-0">
+                <a href="portfolio.html"
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
+                    portfolio
+                  </h1>
+                </a>
+              </div>
+              <div class="col-lg-4 col-12 mt-lg-0 mt-4 pe-lg-0">
+                <a href="whats-new.html"
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
+                    what's new
+                  </h1>
+                </a>
+              </div>
+              <div class="col-lg-4 col-12 mt-4 pe-lg-0">
+                <a href="Customers.html"
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
+                    customers
+                  </h1>
+                </a>
+              </div>
+              <div class="col-lg-4 col-12 mt-4 pe-lg-0">
+                <a href="blogs.html"
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
+                    blog
+                  </h1>
+                </a>
+              </div>
+              <div class="col-lg-4 col-12 mt-4 pe-lg-0">
+                <a href="index.html#contact-us"
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
+                    contact
+                  </h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary-1 py-1"></div>
+      <div class="bg-dark-4 text-center">
+        <h1 class="mb-0 text-white py-4" style="font-size: 12px !important">
+          Copyright © 2023 | UNIVERSAL FINE WINE & SPIRITS COMPANY LIMITED. All
+          Rights Reserved. |
+          <a href="http://www.belongto.com/main/index.html" class="belongto">
+            <span class="text-white">Designed By Belong-To</span></a
+          >
+        </h1>
+      </div>
+    </div>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/owlcarousel/owl.carousel.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>

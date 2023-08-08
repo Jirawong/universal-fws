@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--Bootstrap-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="../css/main.css" />
+    <link rel="stylesheet" href="../css/portfolio.css" />
+    <link rel="stylesheet" href="../js/owlcarousel/assets/owl.carousel.css" />
+    <link
+      rel="stylesheet"
+      href="../js/owlcarousel/assets/owl.theme.default.css"
+    />
+    <!--custom Bootstrap-->
+    <link rel="stylesheet" href="../scss/custom.css" />
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--navbar-->
+    <div class="nav-menu">
+      <div class="menu-btn d-lg-block d-none">
+        <button class="menu-open">
+          <div
+            class="d-flex flex-column align-items-center justify-content-center bg-dark-1 py-3 px-4"
+          >
+            <h1 class="fs-9 text-light">MENU</h1>
+            <img src="../assets/svg/menubtn.svg" alt="" />
+          </div>
+        </button>
+      </div>
+      <div class="menu d-lg-block d-none" id="menu">
+        <div class="d-flex flex-column h-100 px-5">
+          <div class="d-lg-flex align-items-center mt-6 d-none">
+            <a href="../index.html" class="logo-container pe-3">
+              <img
+                src="../assets/about/svg/logo.svg"
+                class="img-fluid"
+                alt=""
+              />
+            </a>
+            <a type="button" class="close-menu"
+              ><img src="../assets/svg/close.svg" alt=""
+            /></a>
+          </div>
+          <div class="d-flex d-lg-none justify-content-end mt-8">
+            <a type="button" class="close-menu"
+              ><img src="../assets/svg/close.svg" alt=""
+            /></a>
+          </div>
+
+          <a href="../About.html" class="ms-auto mt-5"
+            ><h1 class="text-light fs-6">ABOUT</h1>
+          </a>
+          <a
+            type="button"
+            class="port-toggle ms-auto mt-3"
+            data-bs-toggle="collapse"
+            data-bs-target="#port"
+            id=""
+          >
+            <div class="d-flex align-items-center">
+              <h1 class="text-light fs-6 me-2">PORTFOLIO</h1>
+              <div class="icon mb-2">
+                <svg width="20.414" height="11.414" viewBox="0 0 20.414 11.414">
+                  <g
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                    data-name="Group 130"
+                  >
+                    <path d="m.707.707 10 10" data-name="Line 30" />
+                    <path d="m19.707.707-10 10" data-name="Line 31" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="port">
+            <div class="d-flex flex-column">
+              <a href="../portfolio.html" class="ms-auto mt-3"
+                ><h1 class="fs-6 font-ITC text-light">Wine</h1>
+              </a>
+              <a href="../portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Spirits</h1>
+              </a>
+              <a href="../portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Accessories</h1>
+              </a>
+              <a href="../portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Others</h1>
+              </a>
+              <div class="d-flex">
+                <div
+                  class="ms-auto line border border-1 border-light px-7 my-3"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <a href="../whats-new.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">What's new</h1>
+          </a>
+          <a href="../Customers.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Customers</h1>
+          </a>
+          <a href="../blogs.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Blog</h1>
+          </a>
+          <a href="../index.html#contact-us" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Contact</h1>
+          </a>
+          <div class="d-flex mt-auto mb-6 d-lg-none align-items-center">
+            <div class="ms-auto contacts">
+              <a href="https://www.facebook.com/ufws.th" class="px-3">
+                <svg
+                  width="9.956"
+                  fill="#b0a07b"
+                  height="18.591"
+                  viewBox="0 0 9.956 18.591"
+                >
+                  <path
+                    d="m9.3 10.458.52-3.365H6.592V4.91a1.683 1.683 0 0 1 1.9-1.818h1.464V.228A17.845 17.845 0 0 0 7.351 0c-2.659 0-4.4 1.612-4.4 4.529v2.564H0v3.364h2.955v8.133h3.637v-8.132Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/ufws-th/" class="px-3">
+                <svg
+                  width="18.591"
+                  height="18.59"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.591 18.59"
+                >
+                  <path
+                    d="M14.216 3.32a1.091 1.091 0 1 0 1.09 1.09 1.09 1.09 0 0 0-1.09-1.09"
+                  />
+                  <path
+                    d="M9.371 4.715a4.581 4.581 0 1 0 4.58 4.58 4.586 4.586 0 0 0-4.58-4.58m0 7.515a2.935 2.935 0 1 1 2.935-2.935 2.937 2.937 0 0 1-2.935 2.935"
+                  />
+                  <path
+                    d="M13.006 18.59H5.584A5.59 5.59 0 0 1 0 13.006V5.584A5.59 5.59 0 0 1 5.584 0h7.422a5.591 5.591 0 0 1 5.585 5.584v7.422a5.591 5.591 0 0 1-5.585 5.584M5.584 1.749a3.839 3.839 0 0 0-3.835 3.835v7.422a3.839 3.839 0 0 0 3.835 3.835h7.422a3.839 3.839 0 0 0 3.835-3.835V5.584a3.839 3.839 0 0 0-3.835-3.835Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/@UFWSThailand" class="px-3">
+                <svg
+                  width="18.59"
+                  height="13.013"
+                  data-name=""
+                  viewBox="0 0 18.59 13.013"
+                  fill="#b0a07b"
+                >
+                  <defs>
+                    <clipPath id="a">
+                      <path
+                        fill="none"
+                        d="M0 0h18.59v13.013H0z"
+                        data-name="Rectangle 74"
+                      />
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#a)">
+                    <path
+                      d="M14.51 0H4.079A4.08 4.08 0 0 0 0 4.079v4.855a4.08 4.08 0 0 0 4.079 4.079H14.51a4.08 4.08 0 0 0 4.08-4.079V4.079A4.08 4.08 0 0 0 14.51 0m-2.544 6.779a.652.652 0 0 1-.318.318l-3.78 1.746a.651.651 0 0 1-.923-.591V4.761a.651.651 0 0 1 .923-.59l3.779 1.745a.651.651 0 0 1 .318.863"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="mailto:admin@ufws.co.th" class="px-3">
+                <svg
+                  width="18.59"
+                  height="14.307"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.59 14.307"
+                >
+                  <g>
+                    <path
+                      d="m1.436.207 6.418 7.611a1.867 1.867 0 0 0 2.885 0L17.046.34a.678.678 0 0 1 .178-.147 2.1 2.1 0 0 0-.872-.191H2.241a2.1 2.1 0 0 0-.838.175c.011.012.023.02.033.032"
+                    />
+                    <path
+                      d="M18.253 1.066a.687.687 0 0 1-.124.209l-6.348 7.181a3.32 3.32 0 0 1-4.971 0L.35 1.148a.5.5 0 0 1-.034-.047A2.172 2.172 0 0 0 0 2.228v9.891a2.191 2.191 0 0 0 2.193 2.188h14.2a2.191 2.191 0 0 0 2.193-2.188V2.228a2.17 2.17 0 0 0-.337-1.162"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="menu-sm d-lg-none d-block" id="menu">
+        <div class="d-flex flex-column h-100 w-100 px-5">
+          <div class="d-flex justify-content-end pt-4">
+            <a type="button" class="close-menu"
+              ><img src="../assets/svg/close.svg" alt=""
+            /></a>
+          </div>
+
+          <a href="../About.html" class="ms-auto mt-5"
+            ><h1 class="text-light fs-6">ABOUT</h1>
+          </a>
+          <a
+            type="button"
+            class="port-toggle ms-auto mt-3"
+            data-bs-toggle="collapse"
+            data-bs-target="#port"
+          >
+            <div class="d-flex align-items-center">
+              <h1 class="text-light fs-6 me-2">PORTFOLIO</h1>
+              <div class="icon mb-2 pb-1">
+                <svg width="20.414" height="11.414" viewBox="0 0 20.414 11.414">
+                  <g
+                    fill="none"
+                    stroke="#fff"
+                    stroke-width="2"
+                    data-name="Group 130"
+                  >
+                    <path d="m.707.707 10 10" data-name="Line 30" />
+                    <path d="m19.707.707-10 10" data-name="Line 31" />
+                  </g>
+                </svg>
+              </div>
+            </div>
+          </a>
+          <div class="collapse" id="port">
+            <div class="d-flex flex-column">
+              <a href="../portfolio.html" class="ms-auto mt-3"
+                ><h1 class="fs-6 font-ITC text-light">Wine</h1>
+              </a>
+              <a href="../portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Spirits</h1>
+              </a>
+              <a href="../portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Accessories</h1>
+              </a>
+              <a href="../portfolio.html" class="ms-auto mt-2"
+                ><h1 class="fs-6 font-ITC text-light">Others</h1>
+              </a>
+              <div class="d-flex">
+                <div
+                  class="ms-auto line border border-1 border-light my-3 px-6"
+                ></div>
+              </div>
+            </div>
+          </div>
+          <a href="../whats-new.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">What's new</h1>
+          </a>
+          <a href="../Customers.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Customers</h1>
+          </a>
+          <a href="../blogs.html" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Blog</h1>
+          </a>
+          <a href="../index.html#contact-us" class="ms-auto mt-3"
+            ><h1 class="text-light fs-6 text-uppercase">Contact</h1>
+          </a>
+          <div class="d-flex mt-auto mb-6 d-lg-none align-items-center">
+            <div class="ms-auto contacts">
+              <a href="https://www.facebook.com/ufws.th" class="px-3">
+                <svg
+                  width="9.956"
+                  fill="#b0a07b"
+                  height="18.591"
+                  viewBox="0 0 9.956 18.591"
+                >
+                  <path
+                    d="m9.3 10.458.52-3.365H6.592V4.91a1.683 1.683 0 0 1 1.9-1.818h1.464V.228A17.845 17.845 0 0 0 7.351 0c-2.659 0-4.4 1.612-4.4 4.529v2.564H0v3.364h2.955v8.133h3.637v-8.132Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/ufws-th/" class="px-3">
+                <svg
+                  width="18.591"
+                  height="18.59"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.591 18.59"
+                >
+                  <path
+                    d="M14.216 3.32a1.091 1.091 0 1 0 1.09 1.09 1.09 1.09 0 0 0-1.09-1.09"
+                  />
+                  <path
+                    d="M9.371 4.715a4.581 4.581 0 1 0 4.58 4.58 4.586 4.586 0 0 0-4.58-4.58m0 7.515a2.935 2.935 0 1 1 2.935-2.935 2.937 2.937 0 0 1-2.935 2.935"
+                  />
+                  <path
+                    d="M13.006 18.59H5.584A5.59 5.59 0 0 1 0 13.006V5.584A5.59 5.59 0 0 1 5.584 0h7.422a5.591 5.591 0 0 1 5.585 5.584v7.422a5.591 5.591 0 0 1-5.585 5.584M5.584 1.749a3.839 3.839 0 0 0-3.835 3.835v7.422a3.839 3.839 0 0 0 3.835 3.835h7.422a3.839 3.839 0 0 0 3.835-3.835V5.584a3.839 3.839 0 0 0-3.835-3.835Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/@UFWSThailand" class="px-3">
+                <svg
+                  width="18.59"
+                  height="13.013"
+                  data-name=""
+                  viewBox="0 0 18.59 13.013"
+                  fill="#b0a07b"
+                >
+                  <defs>
+                    <clipPath id="a">
+                      <path
+                        fill="none"
+                        d="M0 0h18.59v13.013H0z"
+                        data-name="Rectangle 74"
+                      />
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#a)">
+                    <path
+                      d="M14.51 0H4.079A4.08 4.08 0 0 0 0 4.079v4.855a4.08 4.08 0 0 0 4.079 4.079H14.51a4.08 4.08 0 0 0 4.08-4.079V4.079A4.08 4.08 0 0 0 14.51 0m-2.544 6.779a.652.652 0 0 1-.318.318l-3.78 1.746a.651.651 0 0 1-.923-.591V4.761a.651.651 0 0 1 .923-.59l3.779 1.745a.651.651 0 0 1 .318.863"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="mailto:admin@ufws.co.th" class="px-3">
+                <svg
+                  width="18.59"
+                  height="14.307"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.59 14.307"
+                >
+                  <g>
+                    <path
+                      d="m1.436.207 6.418 7.611a1.867 1.867 0 0 0 2.885 0L17.046.34a.678.678 0 0 1 .178-.147 2.1 2.1 0 0 0-.872-.191H2.241a2.1 2.1 0 0 0-.838.175c.011.012.023.02.033.032"
+                    />
+                    <path
+                      d="M18.253 1.066a.687.687 0 0 1-.124.209l-6.348 7.181a3.32 3.32 0 0 1-4.971 0L.35 1.148a.5.5 0 0 1-.034-.047A2.172 2.172 0 0 0 0 2.228v9.891a2.191 2.191 0 0 0 2.193 2.188h14.2a2.191 2.191 0 0 0 2.193-2.188V2.228a2.17 2.17 0 0 0-.337-1.162"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar bg-dark-1 fixed-top">
+        <div class="container d-flex justify-content-between">
+          <a href="../index.html" class="logo w-lg-50"
+            ><img
+              src="../assets/about/svg/logo.svg"
+              class="img-fluid d-lg-block d-none"
+              alt="" />
+            <img
+              src="../assets/svg/logo-mobile.svg"
+              class="img-fluid ms-5 d-lg-none d-block"
+              alt=""
+          /></a>
+          <div class="d-flex align-items-center">
+            <a href="#" class="request me-lg-5">
+              <p class="fs-6 font-ITC fw-light mb-0">Request Price</p>
+            </a>
+
+            <div class="contacts d-lg-block d-none">
+              <a href="https://www.facebook.com/ufws.th" class="px-3">
+                <svg
+                  width="9.956"
+                  fill="#b0a07b"
+                  height="18.591"
+                  viewBox="0 0 9.956 18.591"
+                >
+                  <path
+                    d="m9.3 10.458.52-3.365H6.592V4.91a1.683 1.683 0 0 1 1.9-1.818h1.464V.228A17.845 17.845 0 0 0 7.351 0c-2.659 0-4.4 1.612-4.4 4.529v2.564H0v3.364h2.955v8.133h3.637v-8.132Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.instagram.com/ufws-th/" class="px-3">
+                <svg
+                  width="18.591"
+                  height="18.59"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.591 18.59"
+                >
+                  <path
+                    d="M14.216 3.32a1.091 1.091 0 1 0 1.09 1.09 1.09 1.09 0 0 0-1.09-1.09"
+                  />
+                  <path
+                    d="M9.371 4.715a4.581 4.581 0 1 0 4.58 4.58 4.586 4.586 0 0 0-4.58-4.58m0 7.515a2.935 2.935 0 1 1 2.935-2.935 2.937 2.937 0 0 1-2.935 2.935"
+                  />
+                  <path
+                    d="M13.006 18.59H5.584A5.59 5.59 0 0 1 0 13.006V5.584A5.59 5.59 0 0 1 5.584 0h7.422a5.591 5.591 0 0 1 5.585 5.584v7.422a5.591 5.591 0 0 1-5.585 5.584M5.584 1.749a3.839 3.839 0 0 0-3.835 3.835v7.422a3.839 3.839 0 0 0 3.835 3.835h7.422a3.839 3.839 0 0 0 3.835-3.835V5.584a3.839 3.839 0 0 0-3.835-3.835Z"
+                  />
+                </svg>
+              </a>
+              <a href="https://www.youtube.com/@UFWSThailand" class="px-3">
+                <svg
+                  width="18.59"
+                  height="13.013"
+                  data-name=""
+                  viewBox="0 0 18.59 13.013"
+                  fill="#b0a07b"
+                >
+                  <defs>
+                    <clipPath id="a">
+                      <path
+                        fill="none"
+                        d="M0 0h18.59v13.013H0z"
+                        data-name="Rectangle 74"
+                      />
+                    </clipPath>
+                  </defs>
+                  <g clip-path="url(#a)">
+                    <path
+                      d="M14.51 0H4.079A4.08 4.08 0 0 0 0 4.079v4.855a4.08 4.08 0 0 0 4.079 4.079H14.51a4.08 4.08 0 0 0 4.08-4.079V4.079A4.08 4.08 0 0 0 14.51 0m-2.544 6.779a.652.652 0 0 1-.318.318l-3.78 1.746a.651.651 0 0 1-.923-.591V4.761a.651.651 0 0 1 .923-.59l3.779 1.745a.651.651 0 0 1 .318.863"
+                    />
+                  </g>
+                </svg>
+              </a>
+              <a href="mailto:admin@ufws.co.th" class="px-3">
+                <svg
+                  width="18.59"
+                  height="14.307"
+                  fill="#b0a07b"
+                  viewBox="0 0 18.59 14.307"
+                >
+                  <g>
+                    <path
+                      d="m1.436.207 6.418 7.611a1.867 1.867 0 0 0 2.885 0L17.046.34a.678.678 0 0 1 .178-.147 2.1 2.1 0 0 0-.872-.191H2.241a2.1 2.1 0 0 0-.838.175c.011.012.023.02.033.032"
+                    />
+                    <path
+                      d="M18.253 1.066a.687.687 0 0 1-.124.209l-6.348 7.181a3.32 3.32 0 0 1-4.971 0L.35 1.148a.5.5 0 0 1-.034-.047A2.172 2.172 0 0 0 0 2.228v9.891a2.191 2.191 0 0 0 2.193 2.188h14.2a2.191 2.191 0 0 0 2.193-2.188V2.228a2.17 2.17 0 0 0-.337-1.162"
+                    />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="d-lg-none d-block me-5">
+            <a type="button" class="menu-open"
+              ><img src="../assets/svg/menubtn.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+      <a href="#top" class="to-top">
+        <img src="../assets/svg/up.svg" alt="" />
+      </a>
+    </div>
+
+    <!--head-->
+    <div class="header py-9">
+      <div
+        class="fadeIn text-container py-9 h-100 w-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1 class="text-light">PORTFOLIO</h1>
+        <h2 class="text-light pb-5">UNIVERSAL FINE WINE & SPIRITS</h2>
+      </div>
+    </div>
+
+    <div
+      class="container d-flex flex-column justify-content-center align-items-center pt-5"
+    >
+      <div class="text-container pt-5 mt-5">
+        <h1 class="">CATEGORIES</h1>
+      </div>
+      <div class="">
+        <img src="../assets/Group 16.svg" alt="" />
+      </div>
+    </div>
+    <div class="topic container">
+      <div
+        class="pt-5 px-lg-5 d-lg-flex flex-lg-row flex-column align-items-center justify-content-center text-center"
+      >
+        <div class="wine">
+          <a type="button" class="active">
+            <h2 class="text-dark active mb-0 font-ITC px-5">Wine</h2>
+          </a>
+          <div class="hover-wine px-4 py-4">
+            <div class="triangle"></div>
+            <a href="../portfolio.html" class="all">
+              <div class="d-flex align-items-center py-2">
+                <div class="flag-container">
+                  <img src="../assets/png/dots.svg" alt="" />
+                </div>
+                <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                  all
+                </h3>
+              </div>
+            </a>
+            <a href="../portfolio.html" class="usa">
+              <div class="d-flex align-items-center py-2">
+                <div class="flag-container">
+                  <img src="../assets/png/flag-usa.png" alt="" />
+                </div>
+                <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                  U.S.A (CALIFORNIA)
+                </h3>
+              </div>
+            </a>
+            <a href="../portfolio.html" class="france">
+              <div class="d-flex align-items-center py-2">
+                <div class="flag-container">
+                  <img src="../assets/png/flag-france.png" alt="" />
+                </div>
+                <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                  FRANCE
+                </h3>
+              </div>
+            </a>
+            <a href="../portfolio.html" class="argen">
+              <div class="d-flex align-items-center py-2">
+                <div class="flag-container">
+                  <img src="../assets/png/flag-argentina.png" alt="" />
+                </div>
+                <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                  ARGENTINA
+                </h3>
+              </div>
+            </a>
+            <a href="../portfolio.html" class="australia">
+              <div class="d-flex align-items-center py-2">
+                <div class="flag-container">
+                  <img src="../assets/png/flag-aut.png" alt="" />
+                </div>
+                <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                  AUSTRALIA
+                </h3>
+              </div>
+            </a>
+            <a href="../portfolio.html" class="chile">
+              <div class="d-flex align-items-center py-2">
+                <div class="flag-container">
+                  <img src="../assets/png/flag-chile.png" alt="" />
+                </div>
+                <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                  CHILE
+                </h3>
+              </div>
+            </a>
+            <a href="../portfolio.html" class="germany">
+              <div class="d-flex align-items-center py-2">
+                <div class="flag-container">
+                  <img src="../assets/png/flag-germany.png" alt="" />
+                </div>
+                <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                  GERMANY
+                </h3>
+              </div>
+            </a>
+            <a href="../portfolio.html" class="italy">
+              <div class="d-flex align-items-center py-2">
+                <div class="flag-container">
+                  <img src="../assets/png/flag-italy.png" alt="" />
+                </div>
+                <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                  ITALY
+                </h3>
+              </div>
+            </a>
+            <a href="../portfolio.html" class="newz">
+              <div class="d-flex align-items-center py-2">
+                <div class="flag-container">
+                  <img src="../assets/png/flag-newz.png" alt="" />
+                </div>
+                <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                  NEW ZEALAND
+                </h3>
+              </div>
+            </a>
+            <a href="../portfolio.html" class="spain">
+              <div class="d-flex align-items-center py-2">
+                <div class="flag-container">
+                  <img src="../assets/png/flag-spain.png" alt="" />
+                </div>
+                <h3 class="ps-4 text-white mb-0 text-uppercase font-prompt">
+                  SPAIN
+                </h3>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div
+          class="line border border-primary-1 border-left py-3 mb-0 d-lg-block d-none"
+        ></div>
+
+        <div class="mt-lg-0 mt-3">
+          <a href="../portfolio.html">
+            <h2 class="text-dark active mb-0 font-ITC px-5">Spririts</h2>
+          </a>
+        </div>
+
+        <div
+          class="line border border-primary-1 border-left py-3 mb-0 d-lg-block d-none"
+        ></div>
+
+        <div class="mt-lg-0 mt-3">
+          <a href="../portfolio.html">
+            <h2 class="text-dark active mb-0 font-ITC px-5">Accessories</h2>
+          </a>
+        </div>
+
+        <div
+          class="line border border-primary-1 border-left py-3 mb-0 d-lg-block d-none"
+        ></div>
+
+        <div class="mt-lg-0 mt-3">
+          <a href="../portfolio.html">
+            <h2 class="text-dark active mb-0 font-ITC px-5">Others</h2>
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-8 d-flex justify-content-center px-lg-5">
+        <div
+          class="wine-category border-top border-bottom border-primary-1 px-lg-5"
+        >
+          <h4 class="mb-0 py-3 px-lg-9 text-center fs-6">
+            WINE | <a href="#" class="text-dark">U.S.A (CALIFORNIA)</a> |
+            <span class="text-primary-1">TRINITY OAKS</span>
+          </h4>
+        </div>
+      </div>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <img src="../assets/portfolio/img-trinity-oaks.png" alt="" />
+    </div>
+    <div class="container">
+      <div class="L wow fadeIn-right d-lg-flex d-block align-items-center mt-6">
+        <div class="img d-lg-block d-flex justify-content-center mb-lg-0 mb-5">
+          <img
+            src="../assets/portfolio/Bottle_Shot_Trinity_Oaks_CS_1.png"
+            alt=""
+          />
+        </div>
+        <div class="text-container ps-lg-5 px-4">
+          <h2 class="text-primary-1">TRINITY OAKS, MERLOT 2018</h2>
+
+          <h3 class="text-primary-1 mt-4">
+            Composition
+            <span class="text-dark ms-4">100% Cabernet Sauvignon</span>
+          </h3>
+          <h3 class="text-primary-1 mt-4 lh-lg">
+            Tasting Notes <br />
+            <span class="text-dark"
+              >Dark, enticing aromas of ripe blackberries and juicy raspberries.
+              Notes of green olive, dried herbs and vanilla complement robust
+              black cherry flavors. This wine is full-bodied with a smooth,
+              rounded finish and pairs well with grilled steak or eggplant
+              parmesan.</span
+            >
+          </h3>
+          <h3 class="text-primary-1 mt-4 lh-lg">
+            Acclaim <br />
+            <span class="text-dark">
+              – Gold Best of Class Medal
+              <br />– New World International Wine Competition <br />
+              – Gold Medal <br />
+              – Critics Challenge International Wine Competition</span
+            >
+          </h3>
+        </div>
+      </div>
+
+      <div class="R wow fadeIn-left d-lg-flex d-block align-items-center mt-6">
+        <div class="img d-lg-none d-flex justify-content-center mb-lg-0 mb-5">
+          <img
+            src="../assets/portfolio/Bottle_Shot_Trinity_Oaks_MR_2.png"
+            alt=""
+          />
+        </div>
+        <div class="text-container pe-lg-5 px-4">
+          <h2 class="text-primary-1">TRINITY OAKS, MERLOT 2018</h2>
+
+          <h3 class="text-primary-1 mt-4">
+            Composition
+            <span class="text-dark ms-4">100% Merlot</span>
+          </h3>
+          <h3 class="text-primary-1 mt-3 lh-lg">
+            Tasting Notes <br />
+            <span class="text-dark"
+              >Aromas of luscious black plum lead to juicy red cherry flavors
+              complemented by notes of herbal spice, tea and vanilla.
+              Medium-bodied with a lingering finish, and pairs well with
+              spaghetti or mushroom risotto.</span
+            >
+          </h3>
+          <h3 class="text-primary-1 mt-3 lh-lg">
+            Acclaim <br />
+            <span class="text-dark">
+              – Double Gold Medal – San Francisco Chronicle Wine
+              Competition</span
+            >
+          </h3>
+        </div>
+        <div class="img d-lg-block d-none">
+          <img
+            src="../assets/portfolio/Bottle_Shot_Trinity_Oaks_MR_2.png"
+            alt=""
+          />
+        </div>
+      </div>
+
+      <div class="L wow fadeIn-right d-lg-flex d-block align-items-center mt-6">
+        <div class="img d-lg-block d-flex justify-content-center mb-lg-0 mb-5">
+          <img
+            src="../assets/portfolio/Bottle_Shot_Trinity_Oaks_MR_3.png"
+            alt=""
+          />
+        </div>
+        <div class="text-container ps-lg-5 px-4">
+          <h2 class="text-primary-1">
+            – Double Gold Medal – San Francisco Chronicle Wine Competition
+          </h2>
+
+          <h3 class="text-primary-1 mt-4">
+            Composition
+            <span class="text-dark ms-4"
+              >76% Pinot Noir, 16% Syrah, 8% Petite Verdot</span
+            >
+          </h3>
+          <h3 class="text-primary-1 mt-4 lh-lg">
+            Tasting Notes <br />
+            <span class="text-dark"
+              >Strong aromas of juicy berries complement ripe red cherry
+              flavors. This medium-bodied Pinot Noir with herbal notes and hints
+              of violet has a smooth, toasty oak finish.</span
+            >
+          </h3>
+          <h3 class="text-primary-1 mt-4 lh-lg">
+            Acclaim <br />
+            <span class="text-dark">
+              – Double Gold Medal <br />
+              – New World International Wine Competition – Gold Medal <br />–
+              San Francisco International Wine Competition</span
+            >
+          </h3>
+        </div>
+      </div>
+
+      <div class="d-flex justify-content-center pt-5 mb-6">
+        <a href="#" class="enter-site primary-btn bg-primary-1 px-6 py-3">
+          <h3 class="text-light text-center mb-0">ENTER SITE</h3>
+        </a>
+      </div>
+    </div>
+    <!--footer-->
+    <div class="footer">
+      <div class="bg-dark-3 py-4 pb-5 container-fluid">
+        <div
+          class="container d-lg-flex d-block justify-content-between text-lg-start text-center"
+        >
+          <div>
+            <h1 class="text-white text-uppercase fs-9 fw-light my-4">
+              UNIVERSAL FINE WINE & SPIRITS <br />COMPANY LIMITED
+            </h1>
+            <div
+              class="contacts d-flex justify-content-center justify-content-lg-start"
+            >
+              <a href="https://www.facebook.com/ufws.th"
+                ><img
+                  src="../assets/about/svg/facebook.svg"
+                  class="pe-3"
+                  alt=""
+              /></a>
+              <a href="https://www.instagram.com/ufws-th/"
+                ><img
+                  src="../assets/about/svg/instagram.svg"
+                  class="px-3"
+                  alt=""
+              /></a>
+              <a href="https://www.youtube.com/@UFWSThailand"
+                ><img src="../assets/about/svg/youtube.svg" class="px-3" alt=""
+              /></a>
+              <a href="mailto:admin@ufws.co.th"
+                ><img src="../assets/about/svg/email.svg" class="px-3" alt=""
+              /></a>
+            </div>
+          </div>
+          <div class="links mt-4">
+            <div class="row text-lg-start text-center">
+              <div class="col-lg-4 col-12 pe-lg-0">
+                <a href="#"
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
+                    About
+                  </h1>
+                </a>
+              </div>
+              <div class="col-lg-4 col-12 mt-lg-0 mt-4 pe-lg-0">
+                <a href="#"
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
+                    portfolio
+                  </h1>
+                </a>
+              </div>
+              <div class="col-lg-4 col-12 mt-lg-0 mt-4 pe-lg-0">
+                <a href="#"
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
+                    what's new
+                  </h1>
+                </a>
+              </div>
+              <div class="col-lg-4 col-12 mt-4 pe-lg-0">
+                <a href="#"
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
+                    customers
+                  </h1>
+                </a>
+              </div>
+              <div class="col-lg-4 col-12 mt-4 pe-lg-0">
+                <a href="#"
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
+                    blog
+                  </h1>
+                </a>
+              </div>
+              <div class="col-lg-4 col-12 mt-4 pe-lg-0">
+                <a href="../index.html#contact-us"
+                  ><h1 class="fs-9 text-white text-uppercase fw-light mb-0">
+                    contact
+                  </h1>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="bg-primary-1 py-1"></div>
+      <div class="bg-dark-4 text-center">
+        <h1 class="mb-0 text-white py-4" style="font-size: 12px !important">
+          Copyright © 2023 | UNIVERSAL FINE WINE & SPIRITS COMPANY LIMITED. All
+          Rights Reserved. |
+          <a href="http://www.belongto.com/main/index.html">
+            <span class="text-white">Designed By Belong-To</span></a
+          >
+        </h1>
+      </div>
+    </div>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/owlcarousel/owl.carousel.min.js"></script>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/blog.js"></script>
+    <script src="../js/wow.js"></script>
+    <script>
+      new WOW().init();
+    </script>
+  </body>
+</html>
