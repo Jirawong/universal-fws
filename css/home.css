@@ -356,8 +356,10 @@ form input {
   position: relative;
 }
 .wine:hover .hover-wine {
-  display: block;
-  opacity: 1;
+  
+  animation: fade 0.1s ease forwards;
+  animation-delay: 0.25s;
+
 }
 .hover-wine {
   z-index: 1000;
@@ -366,9 +368,8 @@ form input {
   width: 264px;
   left: -115px;
   top: 50px;
-  display: none;
-  opacity: 0;
-  transition: opacity 0.2s ease-in-out;
+  animation: fadeout 0.1s ease forwards;
+  animation-delay: 0.25s;
 }
 .hover-wine .triangle {
   position: absolute;
@@ -381,7 +382,7 @@ form input {
   border-bottom: 25px solid #b0a07b;
 }
 
-.hover-wine a:hover h2 {
+.hover-wine a:hover h3 {
   text-decoration: underline;
   text-underline-offset: 5px;
   color: #fff !important;

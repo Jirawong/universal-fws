@@ -95,24 +95,6 @@ a {
   
 }
 
-@keyframes fade {
-  0% {
-    display: none;
-  }
-  100% {
-    display: block;
-  }
-}
-
-@keyframes fadeout {
-  0% {
-    display: block;
-
-  }
-  100% {
-    display: none;
-  }
-}
 
 
 
