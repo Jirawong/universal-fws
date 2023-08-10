@@ -92,13 +92,12 @@ a {
 
 .topic .wine {
   position: relative;
-  
 }
 
-
-
-
 .wine:hover .hover-wine {
+  opacity: 1;
+  transition: all 0.1s ease-in-out;
+  transition-delay: 0.5s;
   animation: fade 0.1s ease forwards;
   animation-delay: 0.5s;
 }
@@ -108,6 +107,8 @@ a {
   width: 264px;
   left: -65px;
   top: 50px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
   animation: fadeout 0.1s ease forwards;
   animation-delay: 0.25s;
 }
@@ -132,8 +133,6 @@ a {
 .hover-wine a:hover {
   text-decoration: none !important;
 }
-
-
 
 .topic {
   position: relative;
